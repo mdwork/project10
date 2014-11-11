@@ -37,6 +37,9 @@ a:hover                        { text-decoration:none; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; width: 100% }
+
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
