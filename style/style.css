@@ -147,17 +147,35 @@ a:hover                        { text-decoration:underline; }
             height: 99px;
             border-bottom: 1px solid #e5e0c7;
         }
+            .cart{
+                position: relative;
+                display: inline-block;
+                width: 40px;
+                height: 36px;
+                margin: 17px 50px 3px 50px;
+                background-image: url('../images/header/busket.png');
+            }
+
             .cnt-goods {
+                position: absolute;
                 display: block;
-                width: 20px;
-                height: 20px;
+                top: 1px;
+                left: -7px;
+                width: 18px;
+                height: 18px;
                 background-color: #5e1b1b;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
                 border-radius: 10px ;
+                text-align: center;
                 font-size: 10px;
                 font-weight: 700;
+                line-height: 18px;
                 color: #ffffff;
             }
             .price {
+                display: block;
+                text-align: center;
                 font-size: 20px;
                 font-weight: 700;
                 font-style: italic;
@@ -173,10 +191,27 @@ a:hover                        { text-decoration:underline; }
             text-align: center;
         }
             .box-authorization a {
-
+                position: relative;
+                top: 19px;
+                left: 9px;
+                border-bottom: 1px dashed #8F8058;
+            }
+            .box-authorization a:hover {
+                text-decoration: none;
+                border-bottom: none;
+            }
+            .box-authorization a:before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: -18px;
+                width: 12px;
+                height: 12px;
+                background-image: url('../images/header/user_icon.png');
             }
 
-    .center-header {
+
+.center-header {
         overflow: hidden;
         width: 580px;
     }
@@ -219,11 +254,32 @@ a:hover                        { text-decoration:underline; }
                 }
                 a.bt-call-me:hover {
                     text-decoration: none;
+                    background-color: #611c1c;
                 }
+                a.bt-call-me:active {
+                    text-decoration: none;
+                    background-color: #4b1515;
+                }
+
 
             .search-box {
                 height: 60px;
             }
+                .search-box input[type=text] {
+                    display: inline-block;
+                    width: 514px;
+                    margin: 14px 0 0 20px;
+                    padding-bottom: 6px;
+                    font: 14px 'PT Serif', serif;
+                    color: #654d00;
+                    border: none;
+                    border-bottom: 1px solid #AA9A4F;
+                }
+                .search-box select {
+                    display: none;
+                }
+
+
 /*--------------------------------------NAV-----------------------------------------*/
 .main-nav {
     padding: 10px 0 10px 0;
