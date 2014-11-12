@@ -69,15 +69,59 @@ a:hover                        { text-decoration:underline; }
     width: 220px;
     background-image: url('../images/bg_sidebar.jpg');
 }
+
+    .sidebar h1{
+        overflow: hidden;
+        float: left;
+        margin: 30px 0px 79px 25px;
+        width: 170px;
+        height: 110px;
+    }
+
     .sidebar h4 {
-        font: 700 18px 'PT Serif', serif;
+        margin: 0px 0px 29px 61px;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
         color: #611c1c;
     }
 
+    menu.catalog-list {
+        padding-left: 15px;
+        padding-right: 8px;
+    }
+
+        .catalog-list li:before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 80px;
+            width: 30px;
+            height: 1px;
+            background-color: #e3dac7;
+        }
+
+        .catalog-list li:first-child:before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+        }
+
+        .catalog-list li {
+            position: relative;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
             .catalog-list a {
                 text-decoration: none;
-                font: 700 12px 'PT Serif', serif;
-                color: #654d00;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 18px;
             }
             .catalog-list a:hover {
                 color: #5e1b1a;
@@ -93,80 +137,121 @@ a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.box-busket,
-.box-authorization {
-    background-color: #efecde;
+.header{
+    width: 720px;
+    height: 160px;
 }
 
-.box-busket {
-    width: 140px;
-    height: 99px;
-}
+        .box-busket,
+        .box-authorization {
+            width: 140px;
+            background-color: #efecde;
+        }
+
+        .box-busket {
+            height: 99px;
+            border-bottom: 1px solid #e5e0c7;
+        }
 
 
-.cnt-goods {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: #5e1b1b;
-    border-radius: 10px ;
-    font-family: 'PT Serif', serif;
-    font-size: 10px;
-    font-weight: 700;
-    color: #ffffff;
-}
+            .cnt-goods {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: #5e1b1b;
+                border-radius: 10px ;
+                font-size: 10px;
+                font-weight: 700;
+                color: #ffffff;
+            }
 
-.price {
-    font-family: 'PT Serif', serif;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    color: #5e1b1b;
-}
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-style: italic;
+                color: #5e1b1b;
+            }
 
-.rubl {
-    font: 14px 'als_rubl', serif;
-    color: #5e1b1b;
-}
+            .rubl {
+                font: 14px 'als_rubl', serif;
+                color: #5e1b1b;
+            }
 
-.box-authorization a {
-    font: 14px 'PT Serif', serif;
-    color: #654d00;
-}
+        .box-authorization {
+            height: 60px;
+            text-align: center;
+        }
 
-.contact{
-    display: inline-block;
-}
+            .box-authorization a {
 
-.contact header{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 10px;
-    color: #654d00;
-}
+            }
 
-.contact span{
-    font-family: 'PT Serif', serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: #5e1b1b;
-}
+    .center-header {
+        overflow: hidden;
+        width: 580px;
+    }
 
-.search-box {
+        .contact-box {
+            height: 59px;
+            border-bottom: 1px solid #e5e0c7;
+        }
+            .contact {
+                display: inline-block;
+                padding: 14px 15px 0px 19px;
+            }
 
-}
+                .contact header {
+                    font-family: 'PT Sans', sans-serif;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 2.6px;
+                }
+                .contact span {
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: 1.6px;
+                    color: #5e1b1b;
+                }
+
+                a.call-me {
+                    float: right;
+                    height: 28px;
+                    width: 160px;
+                    margin: 15px 20px 0px 0px;
+                    text-align: center;
+                    font: 12px 'PT Sans', sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    line-height: 30px;
+                    color: #ffffff;
+                    border-radius: 13px;
+                    -webkit-border-radius: 13px;
+                    -moz-border-radius: 13px;
+                    background-color: #aa9a4f;
+                }
+                a.call-me:hover {
+                    text-decoration: none;
+                }
+
+
+
+            .search-box {
+                height: 60px;
+            }
 /*--------------------------------------NAV-----------------------------------------*/
 .main-nav {
-    height: 39px;
+    padding: 10px 0 10px 0px;
     border-bottom: 1px solid #e5e0c7;
 }
+
     .main-nav li {
         display: inline-block;
+        padding-left: 40px;
     }
-        .main-nav li a {
-            text-decoration: none;
-            font: 14px 'PT Serif', serif;
-            color: #654d00;
-        }
+    .main-nav li:first-child {
+        padding-left: 20px;
+    }
+
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
@@ -182,21 +267,17 @@ a:hover                        { text-decoration:underline; }
     clear: right;
 }
 
-.footer-logo{
-    width: 250px;
-    height: 78px;
-    background-image: url('../images/footer/footer_logo.png');
-}
+    .footer-logo {
+        width: 250px;
+        height: 78px;
+        background-image: url('../images/footer/footer_logo.png');
+    }
 
-.footer-logo a{
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #654d00;
-}
+        .footer-logo a {
+            font-weight: 700;
+            color: #654d00;
+        }
 
-.footer p{
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
-    color: #654d00;
-}
+    .footer p{
+
+    }
