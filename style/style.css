@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:14px 'PT Serif', serif; background:#ffffff; color:#654d00; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -15,8 +15,8 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
-a:hover                        { text-decoration:none; }
+a:link, a:visited              { font:14px 'PT Serif', serif; color:#654d00; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -40,7 +40,8 @@ a:hover                        { text-decoration:none; }
 
 /*font-family: 'PT Sans', sans-serif;*/
 /*font-family: 'PT Serif', serif;*/
-/*font-family: 'als_rubl';*/
+/*font-family: 'als_rubl', serif;*/
+
 @font-face {
     font-family: 'als_rubl';
     src: url('../fonts/alsrubl.eot');
@@ -50,8 +51,8 @@ a:hover                        { text-decoration:none; }
          url('../fonts/alsrubl.svg#als_rublregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -63,34 +64,28 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.sidebar{
+.sidebar {
     float: left;
     width: 220px;
-    background-image: url(../images/bg_sidebar.jpg);
+    background-image: url('../images/bg_sidebar.jpg');
 }
+    .sidebar h4 {
+        font: 700 18px 'PT Serif', serif;
+        color: #611c1c;
+    }
 
-.sidebar h4{
-    font-family: 'PT Serif', serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #611c1c;
-}
-
-.sidebar a{
-     font-family: 'PT Serif', serif;
-     font-size: 12px;
-     font-weight: 700;
-     color: #654d00;
-     text-decoration: none;
- }
-
-.sidebar a:hover{
-    color: #5e1b1a;
-}
+            .catalog-list a {
+                text-decoration: none;
+                font: 700 12px 'PT Serif', serif;
+                color: #654d00;
+            }
+            .catalog-list a:hover {
+                color: #5e1b1a;
+            }
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------WRAPPER-BOX----------------------------------*/
+/*-----------------------------------WRAPPER-BOX------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.wrap-box{
+.wrap-box {
     width: 720px;
     margin-left: 220px;
 }
@@ -99,29 +94,29 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .box-busket,
-.box-authorization{
+.box-authorization {
     background-color: #efecde;
 }
 
-.box-busket{
+.box-busket {
     width: 140px;
     height: 99px;
 }
 
 
-.cnt-goods{
+.cnt-goods {
     display: block;
     width: 20px;
     height: 20px;
+    background-color: #5e1b1b;
     border-radius: 10px ;
     font-family: 'PT Serif', serif;
     font-size: 10px;
     font-weight: 700;
     color: #ffffff;
-    background-color: #5e1b1b;
 }
 
-.price{
+.price {
     font-family: 'PT Serif', serif;
     font-size: 20px;
     font-weight: 700;
@@ -129,32 +124,14 @@ a:hover                        { text-decoration:none; }
     color: #5e1b1b;
 }
 
-.rubl{
-    font-family: 'als_rubl';
-    font-size: 14px;
+.rubl {
+    font: 14px 'als_rubl', serif;
     color: #5e1b1b;
 }
 
-.box-authorization a{
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
+.box-authorization a {
+    font: 14px 'PT Serif', serif;
     color: #654d00;
-}
-/*-------------------------------------NAV------------------------------------------*/
-.main-nav{
-    height: 39px;
-    border-bottom: 1px solid #e5e0c7;
-}
-
-.main-nav li{
-    display: inline-block;
-}
-
-.main-nav a{
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
-    color: #654d00;
-    text-decoration: none;
 }
 
 .contact{
@@ -174,25 +151,41 @@ a:hover                        { text-decoration:none; }
     color: #5e1b1b;
 }
 
-.search-box{
+.search-box {
 
 }
+/*--------------------------------------NAV-----------------------------------------*/
+.main-nav {
+    height: 39px;
+    border-bottom: 1px solid #e5e0c7;
+}
+    .main-nav li {
+        display: inline-block;
+    }
+        .main-nav li a {
+            text-decoration: none;
+            font: 14px 'PT Serif', serif;
+            color: #654d00;
+        }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.home-slider-top {
+    height: 280px;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.footer{
+.footer {
     clear: right;
 }
 
 .footer-logo{
     width: 250px;
     height: 78px;
-    background-image: url(../images/footer/footer_logo.png);
+    background-image: url('../images/footer/footer_logo.png');
 }
 
 .footer-logo a{
