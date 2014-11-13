@@ -114,9 +114,16 @@ a:hover                        { text-decoration:underline; }
                 font-weight: 700;
                 letter-spacing: 2px;
                 line-height: 18px;
+                -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                -moz-transition-duration: 0.2s;
+                transition-duration: 0.2s;
             }
             .list-catalog a:hover {
                 color: #5e1b1a;
+            }
+            .list-catalog :active {
+                color: #4b1515;
             }
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------WRAPPER-BOX------------------------------------*/
@@ -199,10 +206,6 @@ a:hover                        { text-decoration:underline; }
                 top: 19px;
                 left: 9px;
                 border-bottom: 1px dashed #654d00;
-                -webkit-transition-duration: 0.2s;
-                -o-transition-duration: 0.2s;
-                -moz-transition-duration: 0.2s;
-                transition-duration: 0.2s;
             }
             .box-authorization a:hover {
                 text-decoration: none;
@@ -217,6 +220,9 @@ a:hover                        { text-decoration:underline; }
                 width: 12px;
                 height: 12px;
                 background-image: url('../images/header/user_icon.png');
+            }
+            .box-authorization a:hover:before{
+                background-image: url('../images/header/user_icon_hover.png');
             }
 
 
@@ -329,6 +335,19 @@ a:hover                        { text-decoration:underline; }
     }
     .main-nav li:first-child {
         padding-left: 20px;
+    }
+    .main-nav a{
+        text-decoration: none;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+    .main-nav a:hover {
+        color: #5e1b1a;
+    }
+    .main-nav :active {
+        color: #4b1515;
     }
 
 
@@ -542,14 +561,12 @@ a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 .footer {
     clear: right;
-    height: 270px;
+    padding: 25px 0 0 0;
 }
     .footer-logo {
         width: 250px;
         height: 78px;
-        margin: 0 auto;
-        margin-top: 60px;
-        margin-bottom: 16px;
+        margin: 0 auto 16px;
         text-align: center;
         background-image: url('../images/footer/footer_logo.png');
     }
@@ -560,36 +577,33 @@ a:hover                        { text-decoration:underline; }
             text-decoration: none;
             font-weight: 700;
             text-transform: uppercase;
-            line-height: 68px;
-            letter-spacing: 14px;
+            line-height: 66px;
+            letter-spacing: 13px;
             color: #654d00;
         }
 
     .soc-links {
         display: table;
         width: auto;
-        margin: 0 auto;
-        padding-bottom: 16px;
+        margin: 0 auto 16px;
     }
         .soc-links li {
-            display: inline-block;
-            margin-left: 9px ;
+            float: left;
+            margin: 0 5px ;
         }
-        .soc-links li:first-child {
-            display: inline-block;
-            margin-left: 0;
-        }
-            .vk a {
+             .vk a {
                 text-decoration: none;
-                font-family: 'PT Sans';
-                font-weight: 700;
-            }
+                font:700 17px 'PT Sans';
+             }
+             .tw i {
+                 margin-left: 2px;
+             }
             .soc-links a {
                 overflow: hidden;
                 display: inline-block;
                 width: 30px;
                 height: 30px;
-                font-size: 12px;
+                font-size: 16px;
                 line-height: 30px;
                 text-align: center;
                 color:	#AA9A4F;
@@ -610,7 +624,233 @@ a:hover                        { text-decoration:underline; }
             }
             
     .footer p{
+        margin-bottom: 40px;
         text-align: center;
     }
 
 /*--------------------------------------OTHER---------------------------------------*/
+.reg-popup {
+    overflow: hidden;
+    width: 465px;
+    height: 315px;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    background-color: #E5E0C7;
+}
+    .btn-close {
+        cursor: pointer;
+        float: right;
+        margin: 6px 12px 0 0;
+        font-size: 18px;
+    }
+    .btn-close:hover {
+        color: #5e1b1a;
+    }
+    .btn-close:active {
+        color: #4b1515;
+    }
+
+    a.name-form {
+        float: left;
+        margin: 24px 0 35px 30px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #5e1b1b;
+    }
+    a.login-link {
+        float: left;
+        margin: 28px 0 0 38px;
+        font: 14px 'PT Serif', serif;
+        color: #654d00;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px dashed #654d00;
+    }
+    a.login-link:hover {
+        color: #5e1b1a;
+        border-bottom-color: #5e1b1a;
+    }
+    a.login-link:active {
+        color: #4b1515;
+        border-bottom-color: #4b1515;
+    }
+        .reg-popup ul,
+        .login-popup ul,
+        .call-me-popup ul,
+        .buy-one-click-popup ul{
+            clear: both;
+        }
+            .reg-popup li,
+            .login-popup li,
+            .call-me-popup li,
+            .buy-one-click-popup li{
+                overflow: hidden;
+                margin: 0 0 20px 30px;
+            }
+                .reg-popup label,
+                .login-popup label,
+                .call-me-popup label,
+                .buy-one-click-popup label{
+                    font-weight: 700;
+                    line-height: 33px;
+                    color: #654d00;
+                }
+                .reg-popup input[type=text],
+                .reg-popup input[type=password],
+                .login-popup input[type=text],
+                .login-popup input[type=password],
+                .call-me-popup input[type=text],
+                .call-me-popup input[type=tel],
+                .buy-one-click-popup input[type=text],
+                .buy-one-click-popup input[type=tel]{
+                    float: right;
+                    width: 250px;
+                    height: 33px;
+                    padding-left: 11px;
+                    margin-right: 30px;
+                    font-size: 16px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    border-radius: 11px;
+                    border: none;
+                    color: #654d00;
+                    background-color: #F0EDDD;
+                }
+
+
+    .btn-reg {
+        display: block;
+        width: 250px ;
+        height: 35px;
+        margin: 29px auto 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #ffffff;
+        border: none;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
+        background-color: #611C1C;
+    }
+    .btn-reg:hover,
+    .btn-login:hover,
+    .btn-send:hover {
+        background-color: #AA9A4F;
+    }
+    .btn-reg:active,
+    .btn-login:active,
+    .btn-send:active {
+        background-color: #948644;
+    }
+
+.login-popup {
+    overflow: hidden;
+    width: 465px;
+    height: 280px;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    background-color: #E5E0C7;
+}
+    .btn-login {
+        display: block;
+        width: 100px ;
+        height: 35px;
+        margin: 29px auto 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #ffffff;
+        border: none;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
+        background-color: #611C1C;
+    }
+
+.call-me-popup{
+    overflow: hidden;
+    width: 465px;
+    height: 280px;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    background-color: #E5E0C7;
+}
+    .call-me-popup p,
+    .buy-one-click-popup p{
+        float: right;
+        margin: -12px 34px 25px 0;
+        width: 250px;
+        font-size: 14px;
+        font-style: italic;
+    }
+    .cod-tel {
+        padding-left: 55px;
+    }
+    .btn-send {
+        clear: both;
+        display: block;
+        width: 145px;
+        height: 35px;
+        margin: 29px auto 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #ffffff;
+        border: none;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
+        background-color: #611C1C;
+    }
+.buy-one-click-popup{
+    overflow: hidden;
+    width: 465px;
+    height: 300px;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    background-color: #E5E0C7;
+}
