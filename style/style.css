@@ -340,8 +340,10 @@ a:hover                        { text-decoration:underline; }
     background: #E2E2E2;
 }
 
+/*-----------------------------------TOP-SELLERS------------------------------------*/
 .top-sellers {
-    margin-top: -1px;
+    height: 141px;
+    margin: -1px 0 54px;
 }
     .top-sellers li {
         position: relative;
@@ -349,7 +351,6 @@ a:hover                        { text-decoration:underline; }
         width: 319px;
         height: 99px;
         padding: 20px;
-        margin-bottom: 20px;
         border: 1px solid #E5E0C7;
         border-left: none;
         -webkit-transition-duration: 0.2s;
@@ -358,9 +359,9 @@ a:hover                        { text-decoration:underline; }
         transition-duration: 0.2s;
     }
     .top-sellers li:hover {
-        -webkit-box-shadow: 0px 0px 6px 1px rgba(223, 218, 199, 1);
-        -moz-box-shadow:    0px 0px 6px 1px rgba(223, 218, 199, 1);
-        box-shadow:         0px 0px 6px 1px rgba(223, 218, 199, 1);
+        -webkit-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
+        -moz-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
+        box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
     }
         .discount {
             position: absolute;
@@ -467,32 +468,67 @@ a:hover                        { text-decoration:underline; }
             margin-top: 5px;
         }
 
-    .recommendations-block header {
+/*--------------------------------RECOMMENDATIONS-----------------------------------*/
+.recommendations-block h2 {
+    position: relative;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font: 700 24px "PT Serif";
+    letter-spacing: 4px;
+    color: #5e1b1b;
+    text-align: center;
+}
+.recommendations-block h2:before,
+.recommendations-block h2:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 130px;
+    height: 20px;
+}
+.recommendations-block h2:before {
+    left: 30px;
+    background: url("../images/content/header_before_bg.png") no-repeat center;
+}
+.recommendations-block h2:after {
+    right: 30px;
+    background: url("../images/content/header_after_bg.png") no-repeat center;
+}
+
+.list-recommendations {
+    border-top: 3px solid #AA9A4F;
+}
+    .list-recommendations li {
         position: relative;
+        float: left;
+        width: 199px;
+        height: 227px;
+        padding: 15px 20px;
+        border-right: 1px solid #E5E0C7;
+        border-bottom: 1px solid #E5E0C7;
     }
-    .recommendations-block header:before,
-    .recommendations-block header:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 130px;
-        height: 20px;
-    }
-    .recommendations-block header:before {
-        left: 10px;
-        background: url("../images/content/recom_before_bg.png") no-repeat center;
-    }
-    .recommendations-block header:after {
-        right: 10px;
-        background: url("../images/content/recom_after_bg.png") no-repeat center;
-    }
-        .recommendations-block header h2 {
-            text-transform: uppercase;
-            font: 700 24px "PT Serif";
-            letter-spacing: 4px;
-            line-height: 100px;
-            color: #5e1b1b;
+        .hit {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            width: 30px;
+            height: 32px;
+            background: #AA9A4F;
+            font: 700 11px "PT Serif";
+            line-height: 24px;
+            color: #ffffff;
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .hit:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 1px;
+            border-left: 14px solid transparent;
+            border-bottom: 9px solid #ffffff;
+            border-right: 14px solid transparent;
         }
 
 
@@ -500,6 +536,7 @@ a:hover                        { text-decoration:underline; }
     height: 100px;
     background: #E2E2E2;
 }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
