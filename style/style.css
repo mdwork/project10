@@ -361,8 +361,9 @@ a:hover                        { text-decoration:underline; }
 
 /*-----------------------------------TOP-SELLERS------------------------------------*/
 .top-sellers {
-    height: 141px;
-    margin: -1px 0 54px;
+    overflow: hidden;
+    margin-top: -1px;
+    padding-bottom: 54px;
 }
     .top-sellers li {
         position: relative;
@@ -377,7 +378,7 @@ a:hover                        { text-decoration:underline; }
         -moz-transition-duration: 0.2s;
         transition-duration: 0.2s;
     }
-    .top-sellers li:hover {
+    .shadow-box li:hover {
         -webkit-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
         -moz-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
         box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
@@ -419,143 +420,280 @@ a:hover                        { text-decoration:underline; }
             font: 500 16px "PT Sans";
             color: #654d00;
         }
-        .price-box {
-            float: left;
-            width: 80px;
-        }
-            .old-price,
-            .old-price .rubl {
-                text-decoration: line-through;
-                font-size: 12px;
-                font-style: italic;
-                color: #cfbf70;
-            }
-                .old-price .rubl {
-                    font-size: 13px;
-                }
-            .old-price + .price {
-                margin-top: -4px;
-            }
-        a.btn-buy {
-            position: relative;
-            display: inline-block;
-            height: 26px;
-            width: 83px;
-            padding-left: 25px;
-            -webkit-border-radius: 14px;
-            -moz-border-radius: 14px;
-            border-radius: 14px;
-            background: #611C1C;
-            font: 700 12px "PT Serif";
-            line-height: 26px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ffffff;
-            text-align: center;
-            -webkit-transition-duration: 0.2s;
-            -o-transition-duration: 0.2s;
-            -moz-transition-duration: 0.2s;
-            transition-duration: 0.2s;
-        }
-        a.btn-buy:before {
-            content: "";
-            left: 1px;
-            top: 1px;
+        .payment-box {
             position: absolute;
-            width: 24px;
-            height: 24px;
-            -webkit-border-radius: 13px;
-            -moz-border-radius: 13px;
-            border-radius: 13px;
-            background: url("../images/content/btn_buy_bg.png") no-repeat center #FFFFFF;
-            -webkit-transition-duration: 0.2s;
-            -o-transition-duration: 0.2s;
-            -moz-transition-duration: 0.2s;
-            transition-duration: 0.2s;
+            bottom: 14px;
+            left: 20px;
         }
-        .btn-buy:hover {
-            text-decoration: none;
-            background: #AA9A4F;
+        .top-sellers .payment-box {
+            bottom: 18px;
         }
-        .btn-buy:hover:before {
-            background: url("../images/content/btn_buy_hover_bg.png") no-repeat center #FFFFFF;
-        }
-        .btn-buy:active {
-            background: #948644;
-        }
-        .top-sellers .btn-buy {
-            margin-top: 5px;
-        }
+            .price-box {
+                float: left;
+                width: 70px;
+            }
+                .old-price,
+                .old-price .rubl {
+                    text-decoration: line-through;
+                    font-size: 12px;
+                    font-style: italic;
+                    color: #cfbf70;
+                }
+                    .old-price .rubl {
+                        font-size: 13px;
+                    }
+                .old-price + .price {
+                    margin-top: -4px;
+                }
+            .buy {
+                vertical-align: middle;
+            }
+                a.btn-buy {
+                    position: absolute;
+                    bottom: 2px;
+                    display: inline-block;
+                    height: 26px;
+                    width: 83px;
+                    padding-left: 25px;
+                    -webkit-border-radius: 13px;
+                    -moz-border-radius: 13px;
+                    border-radius: 13px;
+                    background: #611C1C;
+                    font: 700 12px "PT Serif";
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: #ffffff;
+                    text-align: center;
+                    -webkit-transition-duration: 0.2s;
+                    -o-transition-duration: 0.2s;
+                    -moz-transition-duration: 0.2s;
+                    transition-duration: 0.2s;
+                }
+                a.btn-buy:before {
+                    content: "";
+                    left: 1px;
+                    top: 1px;
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    -webkit-border-radius: 12px;
+                    -moz-border-radius: 12px;
+                    border-radius: 12px;
+                    background: url("../images/content/btn_buy_bg.png") no-repeat center #FFFFFF;
+                    -webkit-transition-duration: 0.2s;
+                    -o-transition-duration: 0.2s;
+                    -moz-transition-duration: 0.2s;
+                    transition-duration: 0.2s;
+                }
+                .btn-buy:hover {
+                    text-decoration: none;
+                    background: #AA9A4F;
+                }
+                .btn-buy:hover:before {
+                    background: url("../images/content/btn_buy_hover_bg.png") no-repeat center #FFFFFF;
+                }
+                .btn-buy:active {
+                    background: #948644;
+                }
+                .top-sellers .btn-buy {
+                    top: 5px;
+                }
 
 /*--------------------------------RECOMMENDATIONS-----------------------------------*/
-.recommendations-block h2 {
+.recommendations-block {
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+    .recommendations-block h2 {
+        position: relative;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        font: 700 24px "PT Serif";
+        letter-spacing: 4px;
+        color: #5e1b1b;
+        text-align: center;
+    }
+    .header-bg:before,
+    .header-bg:after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        width: 130px;
+        height: 20px;
+    }
+    .header-bg:before {
+        left: 30px;
+        background: url("../images/content/header_before_bg.png") no-repeat center;
+    }
+    .header-bg:after {
+        right: 30px;
+        background: url("../images/content/header_after_bg.png") no-repeat center;
+    }
+
+    .list-border-top {
+        border-top: 3px solid #AA9A4F;
+    }
+        .list-recommendations li {
+            position: relative;
+            float: left;
+            width: 199px;
+            height: 227px;
+            padding: 15px 20px;
+            border-right: 1px solid #E5E0C7;
+            border-bottom: 1px solid #E5E0C7;
+        }
+            .hit {
+                position: absolute;
+                top: -3px;
+                right: 20px;
+                width: 30px;
+                height: 35px;
+                background: #AA9A4F;
+                font: 700 11px "PT Serif";
+                line-height: 28px;
+                color: #ffffff;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+            }
+            .hit:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 1px;
+                border-left: 14px solid transparent;
+                border-bottom: 9px solid #ffffff;
+                border-right: 14px solid transparent;
+            }
+
+            .img-box {
+                height: 120px;
+                margin: 5px 0 22px;
+            }
+
+/*-----------------------------------NIGHT-LESS-------------------------------------*/
+.night-less {
     position: relative;
-    margin-bottom: 32px;
-    text-transform: uppercase;
-    font: 700 24px "PT Serif";
-    letter-spacing: 4px;
-    color: #5e1b1b;
+    padding-top: 16px;
+    margin-bottom: 54px;
+    background: url("../images/content/night_less_bg.jpg") repeat;
     text-align: center;
 }
-.recommendations-block h2:before,
-.recommendations-block h2:after {
+.night-less:after {
     content: "";
-    position: absolute;
-    top: 7px;
-    width: 130px;
-    height: 20px;
+    display: block;
+    width: 100%;
+    height: 86px;
+    margin-top: -64px;
+    background: url("../images/content/night_botom_bg.png") repeat-x -2px bottom;
 }
-.recommendations-block h2:before {
-    left: 30px;
-    background: url("../images/content/header_before_bg.png") no-repeat center;
-}
-.recommendations-block h2:after {
-    right: 30px;
-    background: url("../images/content/header_after_bg.png") no-repeat center;
-}
-
-.list-recommendations {
-    border-top: 3px solid #AA9A4F;
-}
-    .list-recommendations li {
-        position: relative;
-        float: left;
-        width: 199px;
-        height: 227px;
-        padding: 15px 20px;
-        border-right: 1px solid #E5E0C7;
-        border-bottom: 1px solid #E5E0C7;
+    .night-less header {
+        text-align: center;
+        margin-bottom: 31px;
     }
-        .hit {
-            position: absolute;
-            top: 0;
-            right: 20px;
-            width: 30px;
-            height: 32px;
-            background: #AA9A4F;
-            font: 700 11px "PT Serif";
-            line-height: 24px;
-            color: #ffffff;
-            text-align: center;
+        .night-less h2 {
+            position: relative;
+            margin-bottom: 12px;
+            font: 700 30px "PT Serif";
+            color: #edebdb;
             text-transform: uppercase;
-            letter-spacing: 0.3px;
+            letter-spacing: 5px;
         }
-        .hit:after {
+        .night-less h2:before,
+        .night-less h2:after {
             content: "";
             position: absolute;
-            bottom: 0;
-            left: 1px;
-            border-left: 14px solid transparent;
-            border-bottom: 9px solid #ffffff;
-            border-right: 14px solid transparent;
+            top: 9px;
+            width: 60px;
+            height: 38px;
         }
+        .night-less h2:before {
+            left: 104px;
+            background: url("../images/content/header_night_before_bg.png") no-repeat center;
+        }
+        .night-less h2:after {
+            right: 104px;
+            background: url("../images/content/header_night_after_bg.png") no-repeat center;
+        }
+        .night-less-description {
+            font: 400 14px "PT Serif";
+            color: #edebdb;
+        }
+
+    .list-night-less {
+        position: relative;
+        z-index: 5;
+        overflow: hidden;
+        width: 482px;
+        margin: 0 auto 21px;
+        -webkit-box-shadow: 0 0 10px 5px rgba(40, 35, 12, 0.8);
+        -moz-box-shadow: 0 0 10px 5px rgba(40, 35, 12, 0.8);
+        box-shadow: 0 0 10px 5px rgba(40, 35, 12, 0.8);
+    }
+        .list-night-less li {
+            position: relative;
+            float: left;
+            width: 240px;
+            height: 259px;
+            background: #FFFFFF;
+            border-left: 1px solid #E5E0C7;
+            border-bottom: 1px solid #E5E0C7;
+        }
+        .list-night-less li:nth-child(odd) {
+            border-left: none;
+        }
+
+    a.show-all {
+        display: inline-block;
+        font: 300 14px "PT Serif";
+        color: #edebdb;
+        letter-spacing: 1px;
+    }
+        a.show-all span {
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            border: 1px solid #edebdb;
+            vertical-align: middle;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 14px;
+            text-align: center;
+        }
+
+/*------------------------------------NOVELTY---------------------------------------*/
+.novelty {
+    text-align: center;
+}
+    .novelty h2 {
+        position: relative;
+        margin-bottom: 9px;
+        font: 700 24px "PT Serif";
+        color: #5e1b1b;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    .novelty .show-all,
+    .novelty .show-all span {
+        color: #5e1b1b;
+    }
+    .novelty .show-all {
+        margin-bottom: 24px;
+    }
+    .novelty .show-all span {
+        border-color: #5e1b1b;
+    }
 
 
 .brands-slider {
     height: 100px;
     background: #E2E2E2;
 }
-
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
