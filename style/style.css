@@ -86,8 +86,8 @@ a.btn-first {
     a.btn-first:hover {
         background: #AA9A4F;
     }
-    .btn-third:active,
-    a.btn-third:active {
+    .btn-first:active,
+    a.btn-first:active {
         background: #948644;
     }
 
@@ -949,8 +949,8 @@ a.btn-third {
 
 
 /*------------------------------------CATALOG-HOME----------------------------------*/
-.catalog-home {
-    margin: 33px 0 28px 0;
+.content-catalog-home {
+    margin: 33px 0 28px;
 }
     .list-catalog-home {
         padding: 3px 0 0 20px;
