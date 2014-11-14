@@ -56,6 +56,72 @@ a:hover                        { text-decoration:underline; }
     width: 940px;
     margin: 0 auto;
 }
+
+/*-------------------------------------BUTTONS--------------------------------------*/
+.btn,
+a.btn {
+    display: inline-block;
+    border: none;
+    font: 700 12px "PT Serif";
+    text-transform: uppercase;
+    line-height: 33px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+    .btn,
+    a.btn:hover {
+        text-decoration: none;
+    }
+
+.btn-first,
+a.btn-first {
+    background: #611C1C;
+}
+    .btn-first:hover,
+    a.btn-first:hover {
+        background: #AA9A4F;
+    }
+    .btn-third:active,
+    a.btn-third:active {
+        background: #948644;
+    }
+
+.btn-second,
+a.btn-second {
+    background: #E5E0C7;
+    color: #611c1c;
+    text-transform: none;
+    letter-spacing: normal;
+}
+    .btn-second:hover,
+    a.btn-second:hover {
+        background: #AA9A4F;
+        color: #ffffff;
+    }
+    .btn-second:active,
+    a.btn-second:active {
+        background: #948644;
+        color: #ffffff;
+    }
+
+.btn-third,
+a.btn-third {
+    background: #AA9A4F;
+}
+    .btn-third:hover,
+    a.btn-third:hover {
+        background: #611C1C;
+    }
+    .btn-third:active,
+    a.btn-third:active {
+        background: #4B1515;
+    }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -256,27 +322,11 @@ a:hover                        { text-decoration:underline; }
                     height: 28px;
                     width: 160px;
                     margin: 15px 20px 0 0;
-                    text-align: center;
                     font: 12px 'PT Sans', sans-serif;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
                     line-height: 30px;
-                    color: #ffffff;
-                    border-radius: 13px;
                     -webkit-border-radius: 13px;
                     -moz-border-radius: 13px;
-                    background-color: #aa9a4f;
-                    -webkit-transition-duration: 0.2s;
-                    -o-transition-duration: 0.2s;
-                    -moz-transition-duration: 0.2s;
-                    transition-duration: 0.2s;
-                }
-                a.btn-call-me:hover {
-                    text-decoration: none;
-                    background-color: #611c1c;
-                }
-                a.btn-call-me:active {
-                    background-color: #4b1515;
+                    border-radius: 13px;
                 }
 
             .search-box {
@@ -452,24 +502,13 @@ a:hover                        { text-decoration:underline; }
                 a.btn-buy {
                     position: absolute;
                     bottom: 2px;
-                    display: inline-block;
                     height: 26px;
                     width: 83px;
                     padding-left: 25px;
                     -webkit-border-radius: 13px;
                     -moz-border-radius: 13px;
                     border-radius: 13px;
-                    background: #611C1C;
-                    font: 700 12px "PT Serif";
                     line-height: 26px;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    color: #ffffff;
-                    text-align: center;
-                    -webkit-transition-duration: 0.2s;
-                    -o-transition-duration: 0.2s;
-                    -moz-transition-duration: 0.2s;
-                    transition-duration: 0.2s;
                 }
                 a.btn-buy:before {
                     content: "";
@@ -487,15 +526,8 @@ a:hover                        { text-decoration:underline; }
                     -moz-transition-duration: 0.2s;
                     transition-duration: 0.2s;
                 }
-                .btn-buy:hover {
-                    text-decoration: none;
-                    background: #AA9A4F;
-                }
                 .btn-buy:hover:before {
                     background: url("../images/content/btn_buy_hover_bg.png") no-repeat center #FFFFFF;
-                }
-                .btn-buy:active {
-                    background: #948644;
                 }
                 .top-sellers .btn-buy {
                     top: 5px;
@@ -605,19 +637,22 @@ a:hover                        { text-decoration:underline; }
             text-transform: uppercase;
             letter-spacing: 5px;
         }
-        .night-less h2:before,
-        .night-less h2:after {
+        .header-second-bg {
+            position: relative;
+        }
+        .header-second-bg:before,
+        .header-second-bg:after {
             content: "";
             position: absolute;
-            top: 9px;
+            top: 4px;
             width: 60px;
             height: 38px;
         }
-        .night-less h2:before {
+        .header-second-bg:before {
             left: 104px;
             background: url("../images/content/header_night_before_bg.png") no-repeat center;
         }
-        .night-less h2:after {
+        .header-second-bg:after {
             right: 104px;
             background: url("../images/content/header_night_after_bg.png") no-repeat center;
         }
@@ -761,12 +796,33 @@ a:hover                        { text-decoration:underline; }
             text-transform: uppercase;
             background: url("../images/content/subscr_header_bg.png") no-repeat center;
         }
+
         .subscription-block p {
             float: left;
             width: 50%;
             font-style: italic;
             line-height: 20px;
         }
+
+        .subscription-form {
+            float: right;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+        }
+            .subscription-form input[type="text"] {
+                width: 174px;
+                padding: 0 12px;
+                margin-right: -3px;
+                border: none;
+                font: 400 14px "PT Serif";
+                line-height: 33px;
+                background: #F0EDDD;
+                color: #654d00;
+            }
+            .subscription-form input[type="submit"] {
+                width: 130px;
+            }
 
 
 /*----------------------------------------------------------------------------------*/
