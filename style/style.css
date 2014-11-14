@@ -900,7 +900,7 @@ a.btn-third {
 /*----------------------------------------------------------------------------------*/
 /*------------------------------------CATALOG-HOME----------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.catalog-home {
+.main-catalog-home {
     margin: 33px 0 28px 0;
 }
     .list-catalog-home {
@@ -945,14 +945,137 @@ a.btn-third {
                     background-color: #5e1b1b;
                     opacity: 0.7;
                 }
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------CONTACTS--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.main-contacts {
+    margin: 33px 0 76px 0;
+}
+    ul.list-contacts {
+        overflow: hidden;
+        margin: 64px 0 17px 0;
+    }
+        .list-contacts li {
+            float: left;
+            width: 180px;
+            margin: 0 27px 20px 114px;
+        }
+            .list-contacts header {
+                text-transform: uppercase;
+                font: 10px 'PT Sans', sans-serif;
+                letter-spacing: 2.7px;
+            }
+            .list-contacts span {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                color: #aa9a4f;
+            }
+            .list-contacts header.city {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 3.7px;
+            }
+            .list-contacts span.adress {
+                text-transform: none;
+                font: 400 14px 'PT Serif', serif;
+                letter-spacing: 0;
+            }
+            .list-contacts a {
+                color: #aa9a4f;
+                font-weight: 700;
+            }
+            .list-contacts a:hover {
+                text-decoration: none;
+            }
 
+#map_canvas {
+    width: 720px;
+    height: 415px;
+    margin-bottom: 65px;
+}
+
+    .block-title-rite {
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #601d1d;
+    }
+    .header-rite-bg {
+        position: relative;
+    }
+    .header-rite-bg:before,
+    .header-rite-bg:after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        width: 60px;
+        height: 38px;
+    }
+    .header-rite-bg:before {
+        top: 0px;
+        left: 155px;
+        background: url("../images/content/header_rite_before_bg.png") no-repeat center;
+    }
+    .header-rite-bg:after {
+        right: 155px;
+        top: 0px;
+        background: url("../images/content/header_rite_after_bg.png") no-repeat center;
+    }
+    .rite-to-us {
+        margin-left: 185px;
+    }
+
+        .rite-to-us label {
+             display: block;
+            margin-bottom: 12px;
+         }
+        .rite-to-us input[type=text],
+        .rite-to-us input[type=email] {
+            width: 330px;
+            height: 33px;
+            margin-bottom: 25px;
+            padding: 0 10px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 11px;
+            border: none;
+            color: #654d00;
+            background-color: #F0EDDD;
+        }
+        .field-message {
+            width: 330px;
+            height: 115px;
+            padding: 10px 10px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 11px;
+            border: none;
+            color: #654d00;
+            background-color: #F0EDDD;
+        }
+        .btn-rite-to-us {
+            display: block;
+            width: 280px ;
+            height: 45px;
+            margin: 29px 0 0 35px;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            border: none;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------POPUPS---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.reg-popup {
-    overflow: hidden;
-    width: 465px;
-    height: 315px;
+.popup {
     margin: 0 auto;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -961,6 +1084,12 @@ a.btn-third {
     -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     background-color: #E5E0C7;
+}
+
+.reg-popup {
+    overflow: hidden;
+    width: 465px;
+    height: 315px;
 }
     .btn-close {
         cursor: pointer;
@@ -1002,12 +1131,7 @@ a.btn-third {
         color: #4b1515;
         border-bottom-color: #4b1515;
     }
-        .reg-popup ul,
-        .login-popup ul,
-        .call-me-popup ul,
-        .buy-one-click-popup ul{
-            clear: both;
-        }
+
             .reg-popup li,
             .login-popup li,
             .call-me-popup li,
@@ -1023,14 +1147,8 @@ a.btn-third {
                     line-height: 33px;
                     color: #654d00;
                 }
-                .reg-popup input[type=text],
-                .reg-popup input[type=password],
-                .login-popup input[type=text],
-                .login-popup input[type=password],
-                .call-me-popup input[type=text],
-                .call-me-popup input[type=tel],
-                .buy-one-click-popup input[type=text],
-                .buy-one-click-popup input[type=tel]{
+
+                .input-style {
                     float: right;
                     width: 250px;
                     height: 33px;
@@ -1045,82 +1163,41 @@ a.btn-third {
                     background-color: #F0EDDD;
                 }
 
-
     .btn-reg {
         display: block;
         width: 250px ;
         height: 35px;
         margin: 29px auto 0;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-size: 14px;
         letter-spacing: 3px;
-        color: #ffffff;
         border: none;
-        -webkit-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        transition-duration: 0.2s;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
-        background-color: #611C1C;
-    }
-    .btn-reg:hover,
-    .btn-login:hover,
-    .btn-send:hover {
-        background-color: #AA9A4F;
-    }
-    .btn-reg:active,
-    .btn-login:active,
-    .btn-send:active {
-        background-color: #948644;
     }
 
 .login-popup {
     overflow: hidden;
     width: 465px;
     height: 280px;
-    margin: 0 auto;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    background-color: #E5E0C7;
 }
     .btn-login {
         display: block;
         width: 100px ;
         height: 35px;
         margin: 29px auto 0;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-style: 14px;
         letter-spacing: 3px;
-        color: #ffffff;
         border: none;
-        -webkit-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        transition-duration: 0.2s;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
-        background-color: #611C1C;
     }
 
 .call-me-popup{
     overflow: hidden;
     width: 465px;
     height: 280px;
-    margin: 0 auto;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    background-color: #E5E0C7;
 }
     .call-me-popup p,
     .buy-one-click-popup p{
@@ -1139,32 +1216,17 @@ a.btn-third {
         width: 145px;
         height: 35px;
         margin: 29px auto 0;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-style: 14px;
         letter-spacing: 3px;
-        color: #ffffff;
         border: none;
-        -webkit-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        transition-duration: 0.2s;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
-        background-color: #611C1C;
     }
 .buy-one-click-popup{
     overflow: hidden;
     width: 465px;
     height: 300px;
-    margin: 0 auto;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    background-color: #E5E0C7;
 }
 
 /*----------------------------------------------------------------------------------*/
