@@ -112,7 +112,40 @@
 
         <main class="main-content">
             <section class="home-slider-top">
+                <ul class="slider">
+                    <li>
+                        <img src="images/slider/slider_img.jpg" alt="Фаворит">
+                        <div class="slider-text">
+                            <p>Огромный ассортимент товаров для конного спорта</p>
+                        </div>
+                    </li>
 
+                    <li>
+                        <img src="images/slider/slider_img.jpg" alt="Фаворит">
+                        <div class="slider-text">
+                            <p>Огромный ассортимент товаров для конного спорта</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="images/slider/slider_img.jpg" alt="Фаворит">
+                        <div class="slider-text">
+                            <p>Огромный ассортимент товаров для конного спорта</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="pagination">
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                </ul>
             </section>
 
             <ul class="top-sellers shadow-box">
@@ -413,7 +446,23 @@
                 </div>
 
                 <section class="brands-slider">
+                    <ul>
+                        <li>
+                            <img src="images/slider/Balios.png" alt="Balios" />
+                        </li>
+                        <li>
+                            <img src="images/slider/BVertigo.png" alt="B Vertigo" />
+                        </li>
+                        <li>
+                            <img src="images/slider/Horze.png" alt="Horze" />
+                        </li>
+                        <li>
+                            <img src="images/slider/Equistro.png" alt="Equistro" />
+                        </li>
+                    </ul>
 
+                    <span class="prev"></span>
+                    <span class="next"></span>
                 </section>
             </section><!--end ABOUT COMPANY-->
 
@@ -423,8 +472,8 @@
                 </header>
 
                 <p>Подпишитесь на рассылку и получите <br/>300 бонусных баллов на свой счёт бесплатно!</p>
-                <form name="subscription-form" class="subscription-form">
-                    <input type="text" name="email" required placeholder="Введите email" />
+                <form name="subscription-form" class="subscription-form" method="post">
+                    <input type="email" name="email" required placeholder="Введите email" />
                     <input type="submit" name="send" class="btn btn-third" />
                 </form>
             </section>
