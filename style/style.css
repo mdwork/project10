@@ -226,7 +226,7 @@ a:hover                        { text-decoration:underline; }
             }
 
 
-.center-header {
+    .center-header {
         overflow: hidden;
         width: 580px;
     }
@@ -379,6 +379,7 @@ a:hover                        { text-decoration:underline; }
         transition-duration: 0.2s;
     }
     .shadow-box li:hover {
+        z-index: 1;
         -webkit-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
         -moz-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
         box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
@@ -505,7 +506,7 @@ a:hover                        { text-decoration:underline; }
     overflow: hidden;
     padding-bottom: 60px;
 }
-    .recommendations-block h2 {
+    .block-title {
         position: relative;
         margin-bottom: 32px;
         text-transform: uppercase;
@@ -513,6 +514,9 @@ a:hover                        { text-decoration:underline; }
         letter-spacing: 4px;
         color: #5e1b1b;
         text-align: center;
+    }
+    .recommendations-block h2 {
+        margin-bottom: 32px;
     }
     .header-bg:before,
     .header-bg:after {
@@ -534,7 +538,7 @@ a:hover                        { text-decoration:underline; }
     .list-border-top {
         border-top: 3px solid #AA9A4F;
     }
-        .list-recommendations li {
+        .three-columns li {
             position: relative;
             float: left;
             width: 199px;
@@ -542,8 +546,9 @@ a:hover                        { text-decoration:underline; }
             padding: 15px 20px;
             border-right: 1px solid #E5E0C7;
             border-bottom: 1px solid #E5E0C7;
+            text-align: left;
         }
-            .hit {
+            .ribbon {
                 position: absolute;
                 top: -3px;
                 right: 20px;
@@ -557,7 +562,7 @@ a:hover                        { text-decoration:underline; }
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
             }
-            .hit:after {
+            .ribbon:after {
                 content: "";
                 position: absolute;
                 bottom: 0;
@@ -630,12 +635,14 @@ a:hover                        { text-decoration:underline; }
         -webkit-box-shadow: 0 0 10px 5px rgba(40, 35, 12, 0.8);
         -moz-box-shadow: 0 0 10px 5px rgba(40, 35, 12, 0.8);
         box-shadow: 0 0 10px 5px rgba(40, 35, 12, 0.8);
+        text-align: left;
     }
         .list-night-less li {
             position: relative;
             float: left;
-            width: 240px;
-            height: 259px;
+            width: 200px;
+            height: 229px;
+            padding: 15px 20px;
             background: #FFFFFF;
             border-left: 1px solid #E5E0C7;
             border-bottom: 1px solid #E5E0C7;
@@ -667,16 +674,12 @@ a:hover                        { text-decoration:underline; }
 
 /*------------------------------------NOVELTY---------------------------------------*/
 .novelty {
+    overflow: hidden;
+    padding-bottom: 65px;
     text-align: center;
 }
     .novelty h2 {
-        position: relative;
         margin-bottom: 9px;
-        font: 700 24px "PT Serif";
-        color: #5e1b1b;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
     }
     .novelty .show-all,
     .novelty .show-all span {
@@ -685,15 +688,87 @@ a:hover                        { text-decoration:underline; }
     .novelty .show-all {
         margin-bottom: 24px;
     }
-    .novelty .show-all span {
-        border-color: #5e1b1b;
+        .novelty .show-all span {
+            border-color: #5e1b1b;
+        }
+
+    .ribbon.new {
+        background: #C8584B;
     }
 
-
-.brands-slider {
-    height: 100px;
-    background: #E2E2E2;
+/*---------------------------------ABOUT-COMPANY------------------------------------*/
+.about-company {
+    overflow: hidden;
+    padding-bottom: 48px;
 }
+    .about-box {
+        margin-bottom: 27px;
+    }
+        .about-company header {
+            float: left;
+            width: 200px;
+            padding: 0 20px;
+        }
+            .about-company h3 {
+                font: 700 18px "PT Serif";
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                line-height: 79px;
+            }
+        .about-company p {
+            overflow: hidden;
+            font: 400 14px "PT Serif";
+            line-height: 20px;
+        }
+
+    .brands-slider {
+        height: 100px;
+        background: #E2E2E2;
+    }
+
+/*----------------------------------SUBSCRIPTION------------------------------------*/
+.subscription-block {
+    padding: 0 20px;
+}
+    .subscription-block header {
+        position: relative;
+        text-align: center;
+    }
+    .subscription-block header:before,
+    .subscription-block header:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 18px;
+        height: 1px;
+        width: 400px;
+        background: #E5E0C7;
+    }
+    .subscription-block header:before {
+        left: -20px;
+    }
+    .subscription-block header:after {
+        right: -20px;
+    }
+        .subscription-block h3 {
+            position: relative;
+            z-index: 5;
+            width: 154px;
+            margin: 0 auto;
+            font: 400 14px "PT Serif";
+            letter-spacing: 2.5px;
+            line-height: 35px;
+            text-transform: uppercase;
+            background: url("../images/content/subscr_header_bg.png") no-repeat center;
+        }
+        .subscription-block p {
+            float: left;
+            width: 50%;
+            font-style: italic;
+            line-height: 20px;
+        }
+
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -729,13 +804,7 @@ a:hover                        { text-decoration:underline; }
             float: left;
             margin: 0 5px ;
         }
-             .vk a {
-                text-decoration: none;
-                font:700 17px 'PT Sans';
-             }
-             .tw i {
-                 margin-left: 2px;
-             }
+
             .soc-links a {
                 overflow: hidden;
                 display: inline-block;
@@ -751,22 +820,31 @@ a:hover                        { text-decoration:underline; }
                 -moz-transition-duration: 0.2s;
                 transition-duration: 0.2s;
                 border: 1px solid #AA9A4F;
-                border-radius: 20px;
                 -webkit-border-radius: 20px;
                 -moz-border-radius: 20px;
-                -o-border-radius: 20px;
+                border-radius: 20px;
                 background-color: transparent;
+            }
+            .vk a {
+                text-decoration: none;
+                font:700 17px 'PT Sans';
+                line-height: 30px;
             }
             .soc-links a:hover {
                 opacity: 1;
             }
+                .tw i {
+                    margin-left: 2px;
+                }
             
     .footer p{
         margin-bottom: 40px;
         text-align: center;
     }
 
-/*--------------------------------------OTHER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------POPUPS---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
 .reg-popup {
     overflow: hidden;
     width: 465px;
@@ -774,11 +852,10 @@ a:hover                        { text-decoration:underline; }
     margin: 0 auto;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    -o-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     background-color: #E5E0C7;
 }
     .btn-close {
@@ -858,7 +935,6 @@ a:hover                        { text-decoration:underline; }
                     font-size: 16px;
                     -webkit-border-radius: 20px;
                     -moz-border-radius: 20px;
-                    -o-border-radius: 20px;
                     border-radius: 11px;
                     border: none;
                     color: #654d00;
@@ -882,7 +958,6 @@ a:hover                        { text-decoration:underline; }
         transition-duration: 0.2s;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
-        -o-border-radius: 20px;
         border-radius: 20px;
         background-color: #611C1C;
     }
@@ -904,11 +979,10 @@ a:hover                        { text-decoration:underline; }
     margin: 0 auto;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    -o-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     background-color: #E5E0C7;
 }
     .btn-login {
@@ -927,7 +1001,6 @@ a:hover                        { text-decoration:underline; }
         transition-duration: 0.2s;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
-        -o-border-radius: 20px;
         border-radius: 20px;
         background-color: #611C1C;
     }
@@ -939,11 +1012,10 @@ a:hover                        { text-decoration:underline; }
     margin: 0 auto;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    -o-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     background-color: #E5E0C7;
 }
     .call-me-popup p,
@@ -974,7 +1046,6 @@ a:hover                        { text-decoration:underline; }
         transition-duration: 0.2s;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
-        -o-border-radius: 20px;
         border-radius: 20px;
         background-color: #611C1C;
     }
@@ -985,10 +1056,13 @@ a:hover                        { text-decoration:underline; }
     margin: 0 auto;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    -o-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow:    0px 0px 30px 3px rgba(0, 0, 0, 0.11);
-    box-shadow:         0px 0px 30px 3px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     background-color: #E5E0C7;
 }
+
+/*----------------------------------------------------------------------------------*/
+/*--------------------------------------OTHER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
