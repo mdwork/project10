@@ -330,7 +330,8 @@ a.btn-third {
                 }
 
             .search-box {
-                height: 60px;
+                height: 59px;
+                border-bottom: 1px solid #E5E0C7;
             }
                 .search-form{
                     position: relative;
