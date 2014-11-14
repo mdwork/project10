@@ -841,6 +841,54 @@ a:hover                        { text-decoration:underline; }
         margin-bottom: 40px;
         text-align: center;
     }
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------CATALOG-HOME----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.catalog-home {
+    margin: 33px 0 28px 0;
+}
+    .list-catalog-home {
+        padding: 3px 0 0 20px;
+    }
+        .list-catalog-home li {
+            position: relative;
+            display: inline-block;
+            margin: 0 16px 17px 0;
+        }
+            .list-catalog-home a {
+                -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                -moz-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+                text-decoration: none;
+            }
+            .list-catalog-home a:hover {
+                opacity: 0.8;
+            }
+                .list-catalog-home img {
+                    width: 214px;
+                    height: 219px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                }
+                .list-catalog-home h2 {
+                    position: absolute;
+                    width: 177px;
+                    left: 13px;
+                    bottom: 18px;
+                    padding: 7px 5px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font: 700 14px 'PT Serif', serif;
+                    letter-spacing: 2px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    color: #ffffff;
+                    background-color: #5e1b1b;
+                    opacity: 0.7;
+                }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------POPUPS---------------------------------------*/
