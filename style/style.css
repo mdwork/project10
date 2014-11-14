@@ -1070,57 +1070,55 @@ a.btn-third {
 /*----------------------------------------------------------------------------------*/
 /*------------------------------------CATALOG-HOME----------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.catalog-home {
-    margin: 33px 0 28px 0;
+
+.main-contacts {
+    margin: 33px 0 76px 0;
 }
-    .list-catalog-home {
-        padding: 3px 0 0 20px;
+    ul.list-contacts {
+        overflow: hidden;
+        margin: 64px 0 17px 0;
     }
-        .list-catalog-home li {
-            position: relative;
-            display: inline-block;
-            margin: 0 16px 17px 0;
+        .list-contacts li {
+            float: left;
+            width: 180px;
+            margin: 0 27px 20px 114px;
         }
-            .list-catalog-home a {
-                -webkit-transition-duration: 0.2s;
-                -o-transition-duration: 0.2s;
-                -moz-transition-duration: 0.2s;
-                transition-duration: 0.2s;
+            .list-contacts header {
+                text-transform: uppercase;
+                font: 10px 'PT Sans', sans-serif;
+                letter-spacing: 2.7px;
+            }
+            .list-contacts span {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                color: #aa9a4f;
+            }
+            .list-contacts header.city {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 3.7px;
+            }
+            .list-contacts span.adress {
+                text-transform: none;
+                font: 400 14px 'PT Serif', serif;
+                letter-spacing: 0;
+            }
+            .list-contacts a {
+                color: #aa9a4f;
+                font-weight: 700;
+            }
+            .list-contacts a:hover {
                 text-decoration: none;
             }
-            .list-catalog-home a:hover {
-                opacity: 0.8;
-            }
-                .list-catalog-home img {
-                    width: 214px;
-                    height: 219px;
-                    border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                }
-                .list-catalog-home h2 {
-                    position: absolute;
-                    width: 177px;
-                    left: 13px;
-                    bottom: 18px;
-                    padding: 7px 5px;
-                    text-align: center;
-                    text-transform: uppercase;
-                    font: 700 14px 'PT Serif', serif;
-                    letter-spacing: 2px;
-                    border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    color: #ffffff;
-                    background-color: #5e1b1b;
-                    opacity: 0.7;
-                }
 
-#map_canvas {
-    width: 720px;
-    height: 415px;
-    margin-bottom: 65px;
-}
+    #map_canvas {
+        width: 720px;
+        height: 415px;
+        margin-bottom: 65px;
+    }
 
     .block-title-rite {
         margin-bottom: 40px;
@@ -1131,35 +1129,35 @@ a.btn-third {
         letter-spacing: 3px;
         color: #601d1d;
     }
-    .header-rite-bg {
-        position: relative;
-    }
-    .header-rite-bg:before,
-    .header-rite-bg:after {
-        content: "";
-        position: absolute;
-        top: 4px;
-        width: 60px;
-        height: 38px;
-    }
-    .header-rite-bg:before {
-        top: 0px;
-        left: 155px;
-        background: url("../images/content/header_rite_before_bg.png") no-repeat center;
-    }
-    .header-rite-bg:after {
-        right: 155px;
-        top: 0px;
-        background: url("../images/content/header_rite_after_bg.png") no-repeat center;
+        .header-rite-bg {
+            position: relative;
+        }
+        .header-rite-bg:before,
+        .header-rite-bg:after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            width: 60px;
+            height: 38px;
+        }
+        .header-rite-bg:before {
+            top: 0px;
+            left: 155px;
+            background: url("../images/content/header_rite_before_bg.png") no-repeat center;
+        }
+        .header-rite-bg:after {
+            right: 155px;
+            top: 0px;
+            background: url("../images/content/header_rite_after_bg.png") no-repeat center;
     }
     .rite-to-us {
         margin-left: 185px;
     }
 
         .rite-to-us label {
-             display: block;
+            display: block;
             margin-bottom: 12px;
-         }
+        }
         .rite-to-us input[type=text],
         .rite-to-us input[type=email] {
             width: 330px;
