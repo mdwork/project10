@@ -497,7 +497,7 @@ a.btn-third {
         -moz-transition-duration: 0.2s;
         transition-duration: 0.2s;
     }
-    .shadow-box li:hover {
+    .shadow-box > li:hover {
         z-index: 1;
         -webkit-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
         -moz-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
@@ -639,7 +639,7 @@ a.btn-third {
     .list-border-top {
         border-top: 3px solid #AA9A4F;
     }
-        .three-columns li {
+        .three-columns > li {
             position: relative;
             float: left;
             width: 199px;
@@ -848,8 +848,8 @@ a.btn-third {
                 padding: 0 22px;
             }
 
-        .prev,
-        .next {
+        .brands-slider .prev,
+        .brands-slider .next {
             position: absolute;
             top: 26px;
             display: inline-block;
@@ -861,7 +861,7 @@ a.btn-third {
             -moz-transition-duration: 0.2s;
             transition-duration: 0.2s;
         }
-        .prev {
+        .brands-slider .prev {
             left: -1px;
             background: url("../images/slider/prev_arrow.png") no-repeat center;
             -webkit-border-bottom-right-radius: 4px;
@@ -871,10 +871,10 @@ a.btn-third {
             -moz-border-top-right-radius: 4px;
             border-top-right-radius: 4px;
         }
-        .prev:hover {
+        .brands-slider .prev:hover {
             background: url("../images/slider/prev_hover_arrow.png") no-repeat center;
         }
-        .next {
+        .brands-slider .next {
             right: 0;
             background: url("../images/slider/next_arrow.png") no-repeat center;
             -webkit-border-bottom-left-radius: 4px;
@@ -884,11 +884,11 @@ a.btn-third {
             -moz-border-top-left-radius: 4px;
             border-top-left-radius: 4px;
         }
-        .next:hover {
+        .brands-slider .next:hover {
             background: url("../images/slider/next_hover_arrow.png") no-repeat center;
         }
-        .prev:hover,
-        .next:hover {
+        .brands-slider .prev:hover,
+        .brands-slider .next:hover {
             cursor: pointer;
         }
 
@@ -1012,18 +1012,19 @@ a.btn-third {
                 }
 /*------------------------------------CATALOG-PAGE----------------------------------*/
 .content-catalog-page {
-    padding-top: 22px;
+    padding: 22px 0 14px;
 }
     .content-catalog-page .block-title {
         margin-bottom: 23px;
     }
 
     .catalog-filter {
+        margin-bottom: 15px;
         border-top: 1px solid #E5E0C7;
     }
         .list-catalog-filter {
             overflow: hidden;
-            padding: 20px;
+            padding: 20px 20px 26px;
         }
             .list-catalog-filter > li {
                 float: left;
@@ -1134,6 +1135,206 @@ a.btn-third {
                         border-radius: 8px;
                         background: #EFECDE;
                     }
+
+        .reset-hide-block {
+            height: 31px;
+            line-height: 28px;
+            background: #EFECDE;
+            text-align: center;
+        }
+            .reset-hide-block a {
+                position: relative;
+                display: inline-block;
+                margin: 0 15px;
+                font: 400 14px "PT Sans";
+                border-bottom: 1px dotted #5e1b1b;
+                color: #5e1b1b;
+                cursor: pointer;
+                -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                -moz-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+            }
+            .reset-hide-block a:hover {
+                text-decoration: none;
+                border-bottom: 1px dotted #aa9a4f;
+                color: #aa9a4f;
+            }
+                .reset-hide-block a i {
+                    position: absolute;
+                    top: 2px;
+                }
+                a.reset i {
+                    left: -20px;
+                    font-size: 15px;
+                }
+                a.hide i {
+                    left: -15px;
+                    font-size: 14px;
+                }
+
+    .sort-by {
+        overflow: hidden;
+        margin-left: 20px;
+    }
+        .sort-by span {
+            margin-right: 20px;
+        }
+        .sort-by a {
+            position: relative;
+            display: inline-block;
+            padding: 0 28px 0 14px;
+            margin-right: 2px;
+            -webkit-border-radius: 14px;
+            -moz-border-radius: 14px;
+            border-radius: 14px;
+            text-align: center;
+            line-height: 28px;
+            -webkit-transition-duration: 0.2s;
+            -o-transition-duration: 0.2s;
+            -moz-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+        }
+        .sort-by a:after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            right: 13px;
+            width: 7px;
+            height: 4px;
+            background: url("../images/content/sort_pointer_up.png") no-repeat center;
+        }
+        .sort-by a.active:after {
+            background-image: url("../images/content/sort_pointer_down.png");
+        }
+        .sort-by a.active,
+        .sort-by a:hover {
+            background: #F0EDDD;
+            text-decoration: none;
+        }
+        .sort-by a:active {
+            background: #AA9A4F;
+        }
+
+    .list-catalog-page {
+        overflow: hidden;
+        margin: 15px 0;
+        border-top: 1px solid #E5E0C7;
+    }
+        .list-catalog-page > li {
+            position: relative;
+            height: 248px;
+        }
+        .list-catalog-page > li:hover {
+            cursor: pointer;
+        }
+            .list-catalog-page > li > a:hover {
+                text-decoration: none;
+            }
+
+            .list-catalog-page .payment-box {
+                bottom: 32px;
+            }
+                a.btn-remove {
+                    position: absolute;
+                    bottom: 2px;
+                    height: 26px;
+                    width: 136px;
+                    -webkit-border-radius: 13px;
+                    -moz-border-radius: 13px;
+                    border-radius: 13px;
+                    text-transform: none;
+                    font: 700 12px "PT Serif";
+                    line-height: 26px;
+                    letter-spacing: normal;
+                }
+
+                .wait {
+                    padding-left: 20px;
+                    background: url("../images/content/wait_bg.png") left center no-repeat;
+                    font: 400 14px "PT Sans";
+                    color: #611c1c;
+                }
+
+            .list-catalog-page .bonus {
+                position: absolute;
+                left: 88px;
+                bottom: 10px;
+                font: 400 14px "PT Sans";
+            }
+                a.info-icon {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    margin-left: 5px;
+                    background: #EFECDE;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    border-radius: 7px;
+                    font: 400 10px "PT Sans";
+                    -webkit-transition-duration: 0.2s;
+                    -o-transition-duration: 0.2s;
+                    -moz-transition-duration: 0.2s;
+                    transition-duration: 0.2s;
+                    line-height: 15px;
+                    text-align: center;
+                }
+                a.info-icon:hover {
+                    text-decoration: none;
+                }
+
+            .list-colors {
+                display: none;
+                position: absolute;
+                z-index: 5;
+                top: 20px;
+                left: 20px;
+            }
+            .list-catalog-page > li:hover .list-colors {
+                display: block;
+            }
+                .list-colors li a {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    border-radius: 7px;
+                }
+                .purple a {
+                    background: #616187;
+                }
+                .red a {
+                    background: #DF2222;
+                }
+                .green a {
+                    background: #49AF70;
+                }
+
+            .hover-product-info {
+                display: none;
+                position: absolute;
+                left: 0;
+                bottom: -114px;
+                width: 175px;
+                padding: 15px 45px 15px 20px;
+                border-top: 1px solid #E5E0C7;
+                background: inherit;
+            }
+            .list-catalog-page > li:hover .hover-product-info {
+                display: block;
+                z-index: 5;
+            }
+                .hover-product-info h4 {
+                    margin-bottom: 8px;
+                    font: 700 12px "PT Serif";
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #611c1c;
+                }
+                .hover-product-info p {
+                    line-height: 20px;
+                }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------LK-PAGE-------------------------------------*/
@@ -1729,6 +1930,78 @@ a.btn-third {
         .bread-crumbs li a:hover {
             text-decoration: none;
             color: #611c1c;
+        }
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------PAGE-PAGINATION---------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.page-pagination {
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+    .page-pagination li {
+        float: left;
+    }
+        .page-pagination li a {
+            overflow: hidden;
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            margin: 0 3px;
+            -webkit-border-radius: 14px;
+            -moz-border-radius: 14px;
+            border-radius: 14px;
+            font: 400 14px "PT Sans";
+            text-align: center;
+            line-height: 28px;
+            -webkit-transition-duration: 0.2s;
+            -o-transition-duration: 0.2s;
+            -moz-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+        }
+        .page-pagination li a:hover {
+            text-decoration: none;
+            background: #F0EDDD;
+        }
+        .page-pagination li a:active {
+            background: #AA9A4F;
+        }
+        .page-pagination li.active a,
+        .page-pagination li.active a:hover,
+        .page-pagination li.active a:active {
+            background: #F0EDDD;
+            cursor: default;
+        }
+
+        .page-pagination .prev a {
+            width: 22px;
+            margin-right: 10px;
+            background: url("../images/slider/prev_arrow.png") no-repeat center;
+            text-indent: 100%;
+            white-space: nowrap;
+        }
+        .page-pagination .prev a:hover {
+            width: 22px;
+            background: url("../images/slider/prev_hover_arrow.png") no-repeat center transparent;
+        }
+        .page-pagination .prev a:active {
+            background-image: url("../images/slider/prev_hover_arrow.png");
+        }
+
+        .page-pagination .next a {
+            width: 22px;
+            margin-left: 10px;
+            background: url("../images/slider/next_arrow.png") no-repeat center;
+            text-indent: 100%;
+            white-space: nowrap;
+        }
+        .page-pagination .next a:hover {
+            width: 22px;
+            background: url("../images/slider/next_hover_arrow.png") no-repeat center transparent;
+        }
+        .page-pagination .next a:active {
+            background-image: url("../images/slider/next_hover_arrow.png");
         }
 
 /*----------------------------------------------------------------------------------*/
