@@ -361,6 +361,10 @@ a.btn-third {
                         float: right;
                         border: none;
                         background-color: transparent;
+                        -webkit-transition-duration: 0.2s;
+                        -o-transition-duration: 0.2s;
+                        -moz-transition-duration: 0.2s;
+                        transition-duration: 0.2s;
                     }
                     .fa-search {
                         position: absolute;
@@ -436,16 +440,16 @@ a.btn-third {
                 vertical-align: middle;
             }
 
-    .pagination {
+    .slider-pagination {
         position: absolute;
         bottom: 15px;
         width: 100%;
         text-align: center;
     }
-        .pagination li {
+        .slider-pagination li {
             display: inline-block;
         }
-        .pagination a {
+        .slider-pagination a {
             overflow: hidden;
             display: inline-block;
             width: 13px;
@@ -463,14 +467,14 @@ a.btn-third {
             -moz-transition-duration: 0.2s;
             transition-duration: 0.2s;
         }
-        .pagination a:hover {
+        .slider-pagination a:hover {
             opacity: 1;
         }
-        .pagination li.active a {
+        .slider-pagination li.active a {
             background: #9D8D46;
             opacity: 0.8;
         }
-        .pagination li.active a:hover {
+        .slider-pagination li.active a:hover {
             opacity: 1;
         }
 
@@ -647,13 +651,13 @@ a.btn-third {
         }
             .ribbon {
                 position: absolute;
-                top: -3px;
+                top: 0;
                 right: 20px;
                 width: 30px;
                 height: 35px;
                 background: #AA9A4F;
                 font: 700 11px "PT Serif";
-                line-height: 28px;
+                line-height: 26px;
                 color: #ffffff;
                 text-align: center;
                 text-transform: uppercase;
@@ -667,6 +671,10 @@ a.btn-third {
                 border-left: 14px solid transparent;
                 border-bottom: 9px solid #ffffff;
                 border-right: 14px solid transparent;
+            }
+            .list-border-top .ribbon {
+                top: -3px;
+                line-height: 28px;
             }
 
             .img-box {
@@ -793,6 +801,11 @@ a.btn-third {
 
     .ribbon.new {
         background: #C8584B;
+        width: 32px;
+    }
+    .ribbon.new:after {
+        border-left-width: 15px;
+        border-right-width: 15px;
     }
 
 /*---------------------------------ABOUT-COMPANY------------------------------------*/
@@ -997,12 +1010,137 @@ a.btn-third {
                     background-color: #5e1b1b;
                     opacity: 0.7;
                 }
+/*------------------------------------CATALOG-PAGE----------------------------------*/
+.content-catalog-page {
+    padding-top: 22px;
+}
+    .content-catalog-page .block-title {
+        margin-bottom: 23px;
+    }
+
+    .catalog-filter {
+        border-top: 1px solid #E5E0C7;
+    }
+        .list-catalog-filter {
+            overflow: hidden;
+            padding: 20px;
+        }
+            .list-catalog-filter > li {
+                float: left;
+                margin-left: 20px;
+            }
+                .list-catalog-filter li > p,
+                .list-catalog-filter li > span {
+                    margin-bottom: 15px;
+                    font: 700 14px "PT Serif";
+                    text-transform: uppercase;
+                    color: #611c1c;
+                    letter-spacing: 2px;
+                }
+                .slider-price-box {
+                    padding-top: 10px;
+                }
+                    .slider-price {
+                        position: relative;
+                        height: 12px;
+                        background: #EFECDE;
+                        -webkit-border-radius: 6px;
+                        -moz-border-radius: 6px;
+                        border-radius: 6px;
+                    }
+                        .slider-price a {
+                            position: absolute;
+                            top: -2px;
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            -webkit-border-radius: 8px;
+                            -moz-border-radius: 8px;
+                            border-radius: 8px;
+                            background: #611C1C;
+                        }
+                        .slider-price a:before {
+                            position: absolute;
+                            top: -19px;
+                            font: 400 14px "PT Sans";
+                            cursor: default;
+                        }
+                        a.slider-handle-first {
+                            left: 24px;
+                        }
+                        a.slider-handle-first:before {
+                            content: "от";
+                        }
+                        a.slider-handle-second {
+                            right: 20px;
+                        }
+                        a.slider-handle-second:before {
+                            content: "до";
+                        }
+                            .slider-price a > span {
+                                position: absolute;
+                                bottom: -17px;
+                                left: -24px;
+                                width: 70px;
+                                font: 700 12px "PT Serif";
+                                font-style: italic;
+                                cursor: default;
+                                text-align: center;
+                            }
+                                .slider-price a > span .rubl {
+                                    font-size: 12px;
+                                }
+
+                .list-catalog-filter .width-155 select {
+                    width: 100%;
+                    height: 31px;
+                    padding-left: 10px;
+                    border: 1px solid #F0EDDD;
+                    -webkit-border-radius: 16px;
+                    -moz-border-radius: 16px;
+                    border-radius: 16px;
+                    font: 400 14px "PT Serif";
+                    line-height: 31px;
+                    color: #654d00;
+                }
+                    .list-catalog-filter .width-155 select option:hover {
+                        cursor: pointer !important;
+                        background: #EFECDE !important;
+                    }
+
+                .list-radio-sex,
+                .list-check-brand {
+                    display: inline-block;
+                    position: relative;
+                    top: 6px;
+                }
+                .list-radio-sex li,
+                .list-check-brand li {
+                    float: left;
+                    margin-left: 15px;
+                }
+                    .list-radio-sex input[type="radio"] {
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 2px;
+                        border: 2px solid #EFECDE;
+                    }
+                    .list-check-brand input[type="checkbox"] {
+                        width: 21px;
+                        height: 21px;
+                        margin-right: 2px;
+                        -webkit-border-radius: 8px;
+                        -moz-border-radius: 8px;
+                        border-radius: 8px;
+                        background: #EFECDE;
+                    }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------LK-PAGE-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.main-lk-page{
+.main-lk-page {
     overflow: hidden;
-    padding: 40px 0 0 0;
+    padding-top: 40px;
 }
     .nav-lk {
         position: relative;
@@ -1232,9 +1370,8 @@ a.btn-third {
         text-align: center;
     }
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------CONTACTS-------------------------------------*/
+/*--------------------------------------CONTACTS------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
 .main-contacts {
     margin: 33px 0 76px 0;
 }
@@ -1305,13 +1442,13 @@ a.btn-third {
             height: 38px;
         }
         .header-rite-bg:before {
-            top: 0px;
+            top: 0;
             left: 155px;
             background: url("../images/content/header_rite_before_bg.png") no-repeat center;
         }
         .header-rite-bg:after {
             right: 155px;
-            top: 0px;
+            top: 0;
             background: url("../images/content/header_rite_after_bg.png") no-repeat center;
     }
     .rite-to-us {
@@ -1517,5 +1654,44 @@ a.btn-third {
 }
 
 /*----------------------------------------------------------------------------------*/
+/*------------------------------------BREAD-CRUMBS----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.bread-crumbs {
+    overflow: hidden;
+    margin-bottom: 3px;
+    text-align: center;
+}
+    .bread-crumbs li {
+        display: inline-block;
+    }
+    .bread-crumbs li:before {
+        content: "→";
+        font-size: 11px;
+    }
+    .bread-crumbs li:first-child:before {
+        display: none;
+    }
+        .bread-crumbs li a {
+            margin: 0 7px;
+            font: 400 10px "PT Sans";
+            text-transform: uppercase;
+            letter-spacing: 2.8px;
+        }
+        .bread-crumbs li a:hover {
+            text-decoration: none;
+            color: #611c1c;
+        }
+
+/*----------------------------------------------------------------------------------*/
 /*--------------------------------------OTHER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.width-155 {
+    width: 155px;
+    margin-bottom: 30px;
+}
+.mar-lef-0 {
+    margin-left: 0 !important;
+}
+.mar-r-12 {
+    margin-right: 12px;
+}
