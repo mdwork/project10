@@ -53,6 +53,7 @@ a:hover                        { text-decoration:underline; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
+    overflow: hidden;
     width: 940px;
     margin: 0 auto;
 }
@@ -195,6 +196,7 @@ a.btn-third {
 /*-----------------------------------WRAPPER-BOX------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-box {
+    overflow: hidden;
     width: 720px;
     margin-left: 220px;
 }
@@ -418,9 +420,8 @@ a.btn-third {
         .slider-text {
             position: absolute;
             display: table;
-            width: 229px;
-            height: 105px;
-            padding: 28px 30px 30px;
+            width: 290px;
+            height: 165px;
             top: 58px;
             left: 42px;
             background: url("../images/slider/slider_text_bg.png") no-repeat center;
@@ -431,6 +432,7 @@ a.btn-third {
         }
             .slider-text p {
                 display: table-cell;
+                padding: 0 26px;
                 vertical-align: middle;
             }
 
@@ -1000,8 +1002,8 @@ a.btn-third {
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .footer {
-    clear: right;
-    padding: 25px 0 0 0;
+    overflow: hidden;
+    padding: 25px 0 40px 0;
 }
     .footer-logo {
         width: 250px;
@@ -1065,7 +1067,6 @@ a.btn-third {
                 }
             
     .footer p{
-        margin-bottom: 40px;
         text-align: center;
     }
 /*----------------------------------------------------------------------------------*/
