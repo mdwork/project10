@@ -997,6 +997,168 @@ a.btn-third {
                     background-color: #5e1b1b;
                     opacity: 0.7;
                 }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------LK-PAGE-------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.main-lk-page{
+    overflow: hidden;
+    padding: 40px 0 0 0;
+}
+    .nav-lk {
+        position: relative;
+        margin: 75px 0 30px 0;
+    }
+        .nav-lk li {
+            display: inline-block;
+            margin: 0 10px;
+            -webkit-border-radius: 10px 10px 0 0;
+            -moz-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 0 0;
+            border: 1px solid #AA9A4F;
+        }
+        .nav-lk li:before {
+            position: absolute;
+            content: "";
+            top: 28px;
+            width: 690px;
+            height: 1px;
+            background: #AA9A4F;
+        }
+            .nav-lk a {
+                display: block;
+                height: 27px;
+                padding: 0 20px;
+                font-weight: 700;
+                line-height: 27px;
+                color: #aa9a4f;
+            }
+            .nav-lk a:hover {
+                text-decoration: none;
+            }
+
+    .you-have-bonus {
+        width: 680px;
+        height: 159px;
+        margin: 0 0 40px 20px;
+        text-align: center;
+        border: 2px solid #5E1B1B;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+        .hello-user {
+            margin: 28px 0 0 0;
+            font-size: 18px;
+            font-style: italic;
+            color:  #601d1d;
+        }
+        .bonus {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+            color:  #601d1d;
+        }
+        a.btn-bonus-products {
+            width: 325px;
+            height: 33px;
+            margin: 20px 0 0 0;
+            font-size: 14px;
+            font-weight: 400;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+    .list-status {
+        margin: 0 0 0 20px;
+    }
+        .list-status li{
+            width: 680px;
+            margin: 10px 0 0 10px;
+            border: 1px solid #EFECDE;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            border-top: none;
+
+        }
+            .order-status {
+                width: 100%;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                background: #EFECDE ;
+            }
+                .order-status td {
+                    height: 58px;
+                }
+                    .id-order{
+                        position: relative;
+                        width: 120px;
+                        padding-left: 20px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #aa9a4f;
+                    }
+                        .triangle-down {
+                            position: absolute;
+                            top: 25px;
+                            right: 17px;
+                            width: 0;
+                            height: 0;
+                            border-left: 6px solid transparent;
+                            border-right: 6px solid transparent;
+                            border-top: 7px solid #D3CCA9;
+                        }
+                    .status {
+                        padding-left: 40px;
+                        position: relative;
+                    }
+                    .date-order {
+                        text-align: right;
+                        padding-right: 20px; ;
+                    }
+                    .sum-order {
+                        width: 180px;
+                        padding-right: 20px;
+                        text-align: right;
+                    }
+                    .completed {
+                        color: #4cb080;
+                    }
+                    .completed:before {
+                        content: "";
+                        position: absolute;
+                        top: 24px;
+                        left: 20px;
+                        width: 12px;
+                        height: 11px;
+                        background-image: url('../images/content/completed.png');
+                    }
+                    .canceled {
+                        color: #d84444;
+                    }
+                    .canceled:before {
+                        content: "";
+                        position: absolute;
+                        top: 24px;
+                        left: 20px;
+                        width: 11px;
+                        height: 11px;
+                        background-image: url('../images/content/canceled.png');
+                    }
+                    .pending-review {
+                        color: #5e1b1b;
+                    }
+                    .pending-review:before {
+                        content: "";
+                        position: absolute;
+                        top: 21px;
+                        left: 18px;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url('../images/content/pending_review.png');
+                    }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
@@ -1070,7 +1232,7 @@ a.btn-third {
         text-align: center;
     }
 /*----------------------------------------------------------------------------------*/
-/*------------------------------------CATALOG-HOME----------------------------------*/
+/*-------------------------------------CONTACTS-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
 .main-contacts {
