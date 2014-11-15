@@ -273,7 +273,7 @@ a.btn-third {
                 position: relative;
                 top: 19px;
                 left: 9px;
-                border-bottom: 1px dashed #654d00;
+                border-bottom: 1px dotted #654d00;
             }
             .box-authorization a:hover {
                 text-decoration: none;
@@ -1140,7 +1140,7 @@ a.btn-third {
 /*----------------------------------------------------------------------------------*/
 .main-lk-page {
     overflow: hidden;
-    padding-top: 40px;
+    padding: 40px 0 75px 0;
 }
     .nav-lk {
         position: relative;
@@ -1172,6 +1172,13 @@ a.btn-third {
             }
             .nav-lk a:hover {
                 text-decoration: none;
+            }
+            .active {
+                background: #AA9A4F;
+            }
+            .active a {
+                font-weight: 400;
+                color: #ffffff;
             }
 
     .you-have-bonus {
@@ -1211,6 +1218,7 @@ a.btn-third {
         margin: 0 0 0 20px;
     }
         .list-status li{
+            overflow: hidden;
             width: 680px;
             margin: 10px 0 0 10px;
             border: 1px solid #EFECDE;
@@ -1297,6 +1305,47 @@ a.btn-third {
                         height: 14px;
                         background-image: url('../images/content/pending_review.png');
                     }
+            .table-order {
+                width: 640px;
+                margin: 20px 20px 25px 20px;
+            }
+                    .table-order th {
+                        color: #aa9a4f;
+                        background: #E5E0C7;
+                    }
+                    .table-order-bg {
+                        background: #EFECDE;
+                    }
+                    .table-order th,
+                    .table-order td {
+                        padding: 0 0 0 15px;
+                        height: 35px;
+                        border: 1px solid #EFECDE;
+                    }
+                    .table-order th:first-child,
+                    .table-order td:first-child {
+                        padding: 0 0 0 20px;
+                    }
+                    .table-order td {
+                        font: 14px 'PT Sans', sans-serif;
+                    }
+                    .table-order-value {
+                        padding: 0 20px 0 0 !important;
+                        text-align: right;
+                    }
+            .order-details {
+                overflow: hidden;
+                margin-bottom: 15px;
+            }
+                .order-details dt {
+                    margin: 0 0 10px 40px;
+                    float: left;
+                }
+                .order-details dd {
+                    padding: 0 0 0 5px;
+                    float: left;
+                    font-weight: 700;
+                }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
