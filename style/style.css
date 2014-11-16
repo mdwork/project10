@@ -2342,3 +2342,34 @@ a.btn-third {
 .mar-r-12 {
     margin-right: 12px;
 }
+#bg-popup {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#wrap-popup {
+    position: absolute;
+    background-color: #F7F7F7;
+    opacity: 0;
+}
+.icon-close_js:after {
+    content: 'Ñ…';
+    display: inline-table;
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    background: #5E5F60;
+    font: 24px verdana, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.show_js > ul, .show_js {
+    display: block !important;
+}
