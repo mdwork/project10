@@ -684,6 +684,7 @@ a.btn-third {
             }
 
             .img-box {
+                display: block;
                 height: 120px;
                 margin: 5px 0 22px;
             }
@@ -2009,7 +2010,7 @@ a.btn-third {
     margin-right: 20px;
 }
 .top-pagination {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .bottom-pagination {
     margin-top: 15px;
