@@ -342,7 +342,7 @@ a.btn-third {
                     .search-box input[type=text] {
                         display: inline-block;
                         width: 514px;
-                        margin: 14px 0 0 20px;
+                        margin: 11px 0 0 20px;
                         padding-bottom: 6px;
                         font: 14px 'PT Serif', serif;
                         color: #654d00;
@@ -350,8 +350,22 @@ a.btn-third {
                         border-bottom: 1px solid #AA9A4F;
                     }
                     .search-box select {
-                        display: none;
+                        width: 575px;
+                        margin-left: 20px;
+                        font: 14px 'PT Serif', serif;
+                        color: #654d00;
+                        border: none;
                     }
+                        .search-box select optgroup {
+                            margin: 15px 0;
+                            color: #611C1C;;
+                        }
+                        .search-box select option {
+                            color: #654d00;
+                        }
+                        .search-box select optgroup:hover {
+                            background: #000;
+                        }
                     .search-box input[type=submit] {
                         position: relative;
                         z-index: 10;
@@ -2033,6 +2047,7 @@ a.btn-third {
             border: none;
             color: #654d00;
             background-color: #F0EDDD;
+            resize: none;
         }
         .btn-rite-to-us {
             display: block;
