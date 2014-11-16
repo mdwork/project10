@@ -56,6 +56,7 @@ a:hover                        { text-decoration:underline; }
     overflow: hidden;
     width: 940px;
     margin: 0 auto;
+    background-image: url('../images/bg_sidebar.jpg');
 }
 
 /*-------------------------------------BUTTONS--------------------------------------*/
@@ -129,7 +130,6 @@ a.btn-third {
 .sidebar {
     float: left;
     width: 220px;
-    background-image: url('../images/bg_sidebar.jpg');
 }
 
     .main-logo {
@@ -199,6 +199,7 @@ a.btn-third {
     overflow: hidden;
     width: 720px;
     margin-left: 220px;
+    background: #fff;
 }
 
 /*----------------------------------------------------------------------------------*/

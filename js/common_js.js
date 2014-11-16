@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    $('.sidebar').height($('.wrapper').height());
-
     $('input.check-filter').change('click', function(e){
         var curLabel = $(e.target).parent();
 
