@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
 
     $('.check-filter-radio').change(function(e){
-        var resetClassLabel = $(e.target).parent().parent().parent().find('label').removeClass('bg-label_js');
+        $(e.target).parent().parent().parent().find('label').removeClass('bg-label_js');
         var curLabel = $(e.target).parent();
 
         if(curLabel.hasClass('bg-label_js')) {
