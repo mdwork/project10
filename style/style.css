@@ -1267,7 +1267,6 @@ a.btn-third {
         }
 
     .list-catalog-page {
-        overflow: hidden;
         margin: 15px 0;
         border-top: 1px solid #E5E0C7;
     }
@@ -2003,6 +2002,12 @@ a.btn-third {
     position: relative;
     float: right;
     margin-right: 20px;
+}
+.top-pagination {
+    margin-bottom: 15px;
+}
+.bottom-pagination {
+    margin-top: 15px;
 }
     .page-pagination li {
         float: left;
