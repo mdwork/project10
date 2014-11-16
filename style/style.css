@@ -1251,7 +1251,7 @@ a.btn-third {
 
                 .wait {
                     padding-left: 20px;
-                    background: url("../images/content/wait_bg.png") left center no-repeat;
+                    background: url('../images/content/pending_review.png') left center no-repeat;
                     font: 400 14px "PT Sans";
                     color: #611c1c;
                 }
@@ -1315,11 +1315,15 @@ a.btn-third {
                 display: none;
                 position: absolute;
                 left: 0;
-                bottom: -114px;
-                width: 175px;
+                bottom: -115px;
+                width: 174px;
                 padding: 15px 45px 15px 20px;
-                border-top: 1px solid #E5E0C7;
-                background: inherit;
+                border: 1px solid #E5E0C7;
+                border-left: none;
+                background: #FFFFFF;
+                -webkit-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
+                -moz-box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
+                box-shadow: 0 0 6px 1px rgba(223, 218, 199, 1);
             }
             .list-catalog-page > li:hover .hover-product-info {
                 display: block;
@@ -1374,10 +1378,10 @@ a.btn-third {
             .nav-lk a:hover {
                 text-decoration: none;
             }
-            .active {
-                background: #AA9A4F;
-            }
-            .active a {
+        .nav-lk .active {
+            background: #AA9A4F;
+        }
+            .nav-lk .active a {
                 font-weight: 400;
                 color: #ffffff;
             }
