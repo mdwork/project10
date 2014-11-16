@@ -1065,34 +1065,39 @@ a.btn-third {
                             -moz-border-radius: 8px;
                             border-radius: 8px;
                             background: #611C1C;
-                        }
-                        .slider-price a:before {
-                            position: absolute;
-                            top: -19px;
-                            font: 400 14px "PT Sans";
-                            cursor: default;
+                            text-indent: -9999px;
                         }
                         a.slider-handle-first {
                             left: 24px;
                         }
-                        a.slider-handle-first:before {
-                            content: "от";
-                        }
                         a.slider-handle-second {
                             right: 20px;
                         }
-                        a.slider-handle-second:before {
-                            content: "до";
-                        }
-                            .slider-price a > span {
-                                position: absolute;
-                                bottom: -17px;
-                                left: -24px;
+                            .slider-price-box .text {
+                                font: 400 14px "PT Sans";
+                            }
+                            .slider-price-box .begin {
+                                float: left;
+                                margin: 0 0 5px 25px;
+                            }
+                            .slider-price-box .end {
+                                float: right;
+                                margin: 0 20px 5px 0;
+                            }
+                            .handle-first-value,
+                            .handle-second-value {
                                 width: 70px;
+                                margin-top: 5px;
                                 font: 700 12px "PT Serif";
                                 font-style: italic;
                                 cursor: default;
                                 text-align: center;
+                            }
+                            .handle-first-value {
+                                float: left;
+                            }
+                            .handle-second-value {
+                                float: right;
                             }
                                 .slider-price a > span .rubl {
                                     font-size: 12px;
