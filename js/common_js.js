@@ -40,7 +40,7 @@ $(document).ready(function(){
                 scrollTop = window.pageYOffset;
 
             fotoPopup.css({
-                'top': scrollTop + 100,
+                'top': scrollTop,
                 'left': '50%',
                 'margin-left': - (fotoInPopupW / 2)
             });

@@ -350,7 +350,7 @@ a.btn-third {
                         border-bottom: 1px solid #AA9A4F;
                     }
                     .search-box select {
-                        width: 575px;
+                        width: 580px;
                         margin-left: 20px;
                         font: 14px 'PT Serif', serif;
                         color: #654d00;
@@ -2349,12 +2349,20 @@ a.btn-third {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
 }
 #wrap-popup {
     position: absolute;
     background-color: #F7F7F7;
     opacity: 0;
+}
+#bg-popup .ovefview {
+    position: fixed;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
 }
 .icon-close_js:after {
     content: 'Ñ…';
@@ -2372,4 +2380,7 @@ a.btn-third {
 }
 .show_js > ul, .show_js {
     display: block !important;
+}
+#wrap-popup {
+    margin-top: 150px;
 }
