@@ -1046,7 +1046,7 @@ a.btn-third {
                     letter-spacing: 2px;
                 }
                 .slider-price-box {
-                    padding-top: 10px;
+                    margin-top: -13px;
                 }
                     .slider-price {
                         position: relative;
@@ -2320,6 +2320,9 @@ a.btn-third {
 }
 .mar-lef-0 {
     margin-left: 0 !important;
+}
+.mar-bot-0 {
+    margin-bottom: 0;
 }
 .mar-r-12 {
     margin-right: 12px;
