@@ -271,7 +271,7 @@
             <h2>Аксессуары</h2>
         </header>
 
-        <ul>
+        <ul class="li-140">
             <li>
                 <a href="#">
                     <img src="images/content/valtrap_horze.jpg" alt="Вальтрап-трилистник с овчиной">
@@ -313,7 +313,7 @@
                 <h2 class="title-detalis">Контактные данные</h2>
             </header>
 
-            <a href="#">Войдите, если уже регистрировались</a>
+            <a class="login-please" href="#">Войдите, если уже регистрировались</a>
 
             <ul class="contact-detalis">
                 <li>
@@ -344,82 +344,98 @@
                 <h2 class="title-detalis">Способ доставки</h2>
             </header>
 
-            <dl class="shopping-method-detalis">
-                <dt>
-                    <label>
-                        <input type="radio" name="shipping-method" value="Самовывоз" >
-                        Самовывоз
-                    </label>
-                    <span class="additional-expenses">бесплатно</span>
-                </dt>
-                <dd>
-                    Забрать заказ можно по адресу:<br />
-                    г. Калининград, ул. Техническая, 266
-                </dd>
+            <div class="pos-free-delivery">
+                    <dl class="shopping-method-detalis radio">
+                        <dt>
+                            <label>
+                                <input type="radio" class="check-filter-radio" name="shipping-method" value="Самовывоз" >
+                                Самовывоз
+                            </label>
+                            <span class="additional-expenses">бесплатно</span>
+                        </dt>
+                        <dd>
+                            Забрать заказ можно по адресу:<br />
+                            г. Калининград, ул. Техническая, 266
+                        </dd>
 
-                <dt>
-                    <label>
-                        <input type="radio" name="shipping-method" value="Почта России" >
-                        Почта России
-                    </label>
-                    <span class="additional-expenses">250
-                        <span class="rubl">i</span>
-                    </span>
-                </dt>
-                <dd>
-                    Доставка осуществляется до пункта выдачи<br />
-                    в течение 5 рабочих дней
-                </dd>
+                        <dt>
+                            <label>
+                                <input type="radio" class="check-filter-radio" name="shipping-method" value="Почта России" >
+                                Почта России
+                            </label>
+                            <span class="additional-expenses">250
+                                <span class="rubl">i</span>
+                            </span>
+                        </dt>
+                        <dd>
+                            Доставка осуществляется до пункта выдачи<br />
+                            в течение 5 рабочих дней
+                        </dd>
 
-                <dt>
-                    <label>
-                        <input type="radio" name="shipping-method" value="EMS" >
-                        EMS
-                    </label>
-                    <span class="additional-expenses">500
-                        <span class="rubl">i</span>
-                    </span>
-                </dt>
-                <dd>EMS</dd>
+                        <dt>
+                            <label>
+                                <input type="radio" class="check-filter-radio" name="shipping-method" value="EMS" >
+                                EMS
+                            </label>
+                            <span class="additional-expenses">500
+                                <span class="rubl">i</span>
+                            </span>
+                        </dt>
+                        <dd>EMS</dd>
 
-                <dt>
-                    <label>
-                        <input type="radio" name="shipping-method" value="DHL   " >
-                        DHL
-                    </label>
-                    <span class="additional-expenses">750
-                        <span class="rubl">i</span>
-                    </span>
-                </dt>
-                <dd>Эксперсс-доставка до дверей в течение 1 дня</dd>
-            </dl>
+                        <dt>
+                            <label>
+                                <input type="radio" class="check-filter-radio" name="shipping-method" value="DHL   " >
+                                DHL
+                            </label>
+                            <span class="additional-expenses">750
+                                <span class="rubl">i</span>
+                            </span>
+                        </dt>
+                        <dd>Эксперсс-доставка до дверей в течение 1 дня</dd>
+                    </dl>
 
-            <header>
-                <h2 class="title-detalis">Способ доставки</h2>
-            </header>
+                    <div class="free-delivery">
+                        <p>
+                            Для бесплатной доставки Вам необходимо добрать товаров на <span>327</span> <span class="rubl">i</span>
+                        </p>
+                        <a class="btn-catalog-page btn btn-second" href="#">Перейти в каталог товаров</a>
+                    </div>
+                </div>
 
-            <ul class="method-of-paymen-detalis">
-                <li>
-                    <label>
-                        <input type="radio" name="method-of-payment" value="Наличными" >
-                        Наличными
-                    </label>
-                </li>
+                <header>
+                    <h2 class="title-detalis">Способ доставки</h2>
+                </header>
 
-                <li>
-                    <label>
-                        <input type="radio" name="method-of-payment" value="Банковской картой VISA / MasterCard" >
-                        Банковской картой VISA / MasterCard
-                    </label>
-                </li>
+                <ul class="method-of-paymen-detalis radio">
+                    <li>
+                        <label>
+                            <input type="radio" class="check-filter-radio" name="method-of-payment" value="Наличными" >
+                            Наличными
+                        </label>
+                    </li>
 
-                <li>
-                    <label>
-                        <input type="radio" name="method-of-payment" value="Электронными деньгами" >
-                        Электронными деньгами
+                    <li>
+                        <label>
+                            <input type="radio" class="check-filter-radio" name="method-of-payment" value="Банковской картой VISA / MasterCard" >
+                            Банковской картой VISA / MasterCard
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="radio" class="check-filter-radio" name="method-of-payment" value="Электронными деньгами" >
+                            Электронными деньгами
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="discount-coupons">
+                    <label>Купон на скидку
+                    <input class="input-style"  type="text" name="name">
+                    <a class="btn btn-third" href="">Активировать</a>
                     </label>
-                </li>
-            </ul>
+                </div>
 
             <div class="total-price-cart">
                 <span> Сумма с доставкой:
