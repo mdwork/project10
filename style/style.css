@@ -1758,7 +1758,6 @@ a.btn-third {
                         width: 66px;
                         height: 75px;
                         line-height: 75px;
-                        vertical-align: middle;
                         border: 1px solid #E5E0C7;
                         -webkit-border-radius: 12px;
                         -moz-border-radius: 12px;
@@ -1775,6 +1774,7 @@ a.btn-third {
                             -webkit-border-radius: 12px;
                             -moz-border-radius: 12px;
                             border-radius: 12px;
+                            vertical-align: middle;
                         }
 
             .prod-slider-wrap a.prev,
@@ -2262,12 +2262,15 @@ a.btn-third {
             }
             .free-delivery:before {
                 content: "";
-                width: 0;
-                height: 0;
-
+                position: absolute;
+                top: 64px;
+                left: -10px;
+                width: 10px;
+                height: 17px;
+                background-image: url('../images/content/free_delivery_pointer.png');
             }
                 .free-delivery p {
-                    padding: 10px 20px;
+                    padding: 15px 20px;
                     font-weight: 700;
                     font-style: italic;
                     color: #5e1b1b;
