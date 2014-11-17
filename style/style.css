@@ -1492,7 +1492,6 @@ a.btn-third {
                     width: 150px;
                     height: 31px;
                     padding-left: 10px;
-                    mar
                     border: 1px solid #F0EDDD;
                     -webkit-border-radius: 16px;
                     -moz-border-radius: 16px;
@@ -2162,7 +2161,7 @@ a.btn-third {
                     position: relative;
                     width: 200px;
                     height: 33px;
-                    letter-spacing: 0 px;
+                    letter-spacing: 0;
                     -webkit-border-radius: 10px;
                     -moz-border-radius: 10px;
                     border-radius: 10px;
