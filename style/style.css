@@ -1724,7 +1724,7 @@ a.btn-third {
                 overflow: hidden;
                 width: 100%;
                 height: 260px;
-                margin-bottom: 11px;
+                margin-bottom: 5px;
             }
                 .main-photo-slider li {
                     height: 260px;
@@ -1743,6 +1743,7 @@ a.btn-third {
                 height: 79px;
                 width: 234px;
                 margin: 0 auto;
+                padding-top: 6px;
                 text-align: center;
             }
                 .movers-row li {
@@ -1766,6 +1767,15 @@ a.btn-third {
                     }
                     .movers-row li.active a {
                         border: 2px solid #AA9A4F;
+                    }
+                    .movers-row li.active a:before {
+                        content: "";
+                        position: absolute;
+                        width: 11px;
+                        height: 8px;
+                        top:-8px;
+                        left: 27px;
+                        background-image: url("../images/content/active_pointer.png");
                     }
                         .movers-row li img {
                             max-width: 66px;
