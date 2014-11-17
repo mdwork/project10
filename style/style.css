@@ -224,7 +224,17 @@ a.btn-third {
                 width: 40px;
                 height: 36px;
                 margin: 17px 50px 3px 50px;
-                background-image: url('../images/header/busket.png');
+                background: url('../images/header/cart.png') no-repeat center;
+                -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                -moz-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+            }
+            .cart:hover {
+                background-image: url("../images/header/cart_hover.png");
+            }
+            .cart:active {
+                background-image: url("../images/header/cart_active.png");
             }
                 .cnt-goods {
                     position: absolute;
@@ -997,11 +1007,12 @@ a.btn-third {
     margin: 33px 0 28px;
 }
     .list-catalog-home {
+        overflow: hidden;
         padding: 3px 0 0 20px;
     }
         .list-catalog-home li {
             position: relative;
-            display: inline-block;
+            float: left;
             margin: 0 16px 17px 0;
         }
             .list-catalog-home a {
