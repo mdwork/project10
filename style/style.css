@@ -2341,7 +2341,35 @@ a.btn-third {
         background: #E5E0C7;
     }
 /*-------------------------------ACSESUARES-------------------------------------*/
-
+    .accessories{
+        width: 640px;
+        height: 240px;
+        margin: 20px;
+        padding: 20px 20px 0;
+        border: 1px solid #E5E0C7;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+        .slider-accessories-wrap {
+            position: relative;
+        }
+            .slider-accessories-wrap .next-slide {
+                top:49px;
+                right: -21px;
+            }
+            .slider-accessories-wrap .prev-slide {
+                top: 49px;
+                left: -21px;
+            }
+            .list-accessories {
+                margin-top: 10px;
+                margin-left: 24px;
+            }
+            .list-accessories li {
+                margin: 0 31px;
+                width: 140px
+            }
 /*-------------------------------DETALIS-OF-THE-PURCHASE-------------------------------------*/
     .details-of-the-purchase-box {
        margin: 20px;
