@@ -326,7 +326,7 @@ a.btn-third {
                     width: 160px;
                     margin: 15px 20px 0 0;
                     font: 12px 'PT Sans', sans-serif;
-                    line-height: 30px;
+                    line-height: 28px;
                     -webkit-border-radius: 13px;
                     -moz-border-radius: 13px;
                     border-radius: 13px;
@@ -342,7 +342,7 @@ a.btn-third {
                     .search-box input[type=text] {
                         display: inline-block;
                         width: 514px;
-                        margin: 11px 0 0 20px;
+                        margin: 9px 0 0 20px;
                         padding-bottom: 6px;
                         font: 14px 'PT Serif', serif;
                         color: #654d00;
@@ -972,16 +972,17 @@ a.btn-third {
         }
             .subscription-form input[type="email"] {
                 width: 173px;
-                padding: 0 12px;
+                height: 19px;
+                padding: 7px 12px;
                 margin-right: -3px;
                 border: none;
                 font: 400 14px "PT Serif";
-                line-height: 33px;
                 background: #F0EDDD;
                 color: #654d00;
             }
             .subscription-form input[type="submit"] {
                 width: 130px;
+                height: 33px;
             }
 
 
