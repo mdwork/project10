@@ -2717,7 +2717,7 @@ a.btn-third {
     -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     -moz-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.11);
-    background-color: #E5E0C7;
+    background-color: #FFFFFF;
 }
 
 .reg-popup {
@@ -3001,10 +3001,13 @@ a.btn-third {
     position: absolute;
     background-color: #F7F7F7;
     opacity: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 #bg-popup .ovefview {
     position: fixed;
-    background: #000;
+    background: #AA9A4F;
     height: 100%;
     width: 100%;
     opacity: 0.5;
