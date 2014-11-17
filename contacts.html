@@ -9,6 +9,68 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <style type="text/css">
+        /* Set a size for our map container, the Google Map will take up 100% of this container */
+        #map {
+            width: 720px;
+            height: 415px;
+        }
+    </style>
+
+    <!--
+        You need to include this script on any page that has a Google Map.
+        When using Google Maps on your own site you MUST signup for your own API key at:
+            https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+        After your sign up replace the key in the URL below or paste in the new script tag that Google provides.
+    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map_canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(54.710128, 20.534951),
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            setMarkers(map, places);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        function setMarkers(map, locations) {
+            //Определяем область показа маркеров
+            var latlngbounds = new google.maps.LatLngBounds();
+
+            var image = new google.maps.MarkerImage( 'images/content/mark.png',
+                    new google.maps.Size(46,66), // размеры иконок
+                    new google.maps.Point(0,0),
+                    new google.maps.Point(7,36)
+            );
+
+            for (var i = 0; i < places.length; i++) {
+                var myLatLng = new google.maps.LatLng(locations[i][1], locations[i][2]);
+                //Добавляем координаты маркера в область
+                latlngbounds.extend(myLatLng);
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image,
+                    title: locations[i][0]
+                });
+            }
+        }
+        var places = [
+            ['Московский проспект, 153',54.7101700,20.5348103]
+        ];
+    </script>
 </head>
 
 <body>
@@ -147,20 +209,7 @@
                 </li>
             </ul>
 
-            <div id="map_canvas">
-                <script>
-                    function initialize() {
-                        var mapCanvas = document.getElementById('map_canvas');
-                        var mapOptions = {
-                            center: new google.maps.LatLng(54.710128, 20.534951),
-                            zoom: 12,
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        }
-                        var map = new google.maps.Map(mapCanvas, mapOptions)
-                    }
-                    google.maps.event.addDomListener(window, 'load', initialize);
-                </script>
-            </div>
+            <div id="map"></div>
 
             <header>
                 <h2 class="block-title-rite header-rite-bg">Напишите нам</h2>
