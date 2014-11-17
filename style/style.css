@@ -1417,10 +1417,10 @@ a.btn-third {
 /*----------------------------------PRODUCT-PAGE------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .content-product-page {
-    padding: 22px 0 76px;
+    padding: 22px 0 50px;
 }
 .product-container {
-    padding: 0 20px;
+    padding: 0 20px 25px;
 }
     .product-box {
         overflow: hidden;
@@ -1729,13 +1729,12 @@ a.btn-third {
                 .main-photo-slider li {
                     height: 260px;
                     line-height: 260px;
-                    vertical-align: middle;
                     text-align: center;
                 }
                     .main-photo-slider li img {
                         max-height: 260px;
                         max-width: 300px;
-                        line-height: normal;
+                        vertical-align: middle;
                     }
 
             .movers-row {
@@ -1780,7 +1779,6 @@ a.btn-third {
                         .movers-row li img {
                             max-width: 66px;
                             max-height: 75px;
-                            line-height: normal;
                             -webkit-border-radius: 12px;
                             -moz-border-radius: 12px;
                             border-radius: 12px;
@@ -1818,7 +1816,7 @@ a.btn-third {
             }
 
     .product-description {
-
+        margin-bottom: 36px;
     }
         .product-description h3 {
             margin-bottom: 10px;
@@ -1832,6 +1830,160 @@ a.btn-third {
             margin-bottom: 9px;
         }
 
+    .pricing {
+        position: relative;
+        padding: 13px 20px 18px;
+        border: 1px solid #E5E0C7;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        text-align: center;
+    }
+        .pricing p {
+            margin-bottom: 11px;
+            font: 400 16px "PT Serif";
+        }
+            .pricing strong {
+                color: #611c1c;
+            }
+        a.bt-find-out {
+            width: 87px;
+            -webkit-border-radius: 17px;
+            -moz-border-radius: 17px;
+            border-radius: 17px;
+            font-size: 14px;
+        }
+
+    .content-product-page header h2 {
+        position: relative;
+        margin: 36px 0;
+        text-transform: uppercase;
+        font: 700 18px "PT Serif";
+        color: #5e1b1b;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .li-140 {
+        overflow: hidden;
+    }
+        .li-140 li {
+            overflow: hidden;
+            position: relative;
+            float: left;
+            width: 140px;
+            height: 170px;
+        }
+            .li-140 a:hover {
+                text-decoration: none;
+            }
+                .li-140 .img-box {
+                    height: 95px;
+                    margin: 0 0 6px;
+                    line-height: 95px;
+                    text-align: center;
+                }
+                    .li-140 .img-box img {
+                        max-height: 95px;
+                        max-width: 110px;
+                        vertical-align: middle;
+                    }
+                    .li-140 .product-name {
+                        font-size: 14px;
+                    }
+            .li-140 .payment-box {
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+                .li-140 .payment-box .price {
+                    display: inline-block;
+                }
+                .li-140 .check {
+                    float: right;
+                    margin-top: -3px;
+                }
+
+    .list-collect-kit {
+        overflow: hidden;
+        padding-bottom: 25px;
+    }
+        .list-collect-kit li {
+            overflow: visible;
+            position: relative;
+            margin: 0 20px;
+        }
+        .list-collect-kit li:before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 77px;
+            height: 16px;
+            width: 16px;
+            background: url("../images/content/plus.png") no-repeat center;
+        }
+        .list-collect-kit li:first-child:before {
+            display: none;
+        }
+
+        .list-collect-kit li.last {
+            height: 110px;
+            width: 124px;
+            padding: 30px 8px;
+            background: #EFECDE;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .list-collect-kit li.last:before {
+            background-image: url("../images/content/equally.png");
+        }
+            .list-collect-kit .last .in-total {
+                display: block;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                font: 400 10px "PT Sans";
+            }
+            .list-collect-kit .last .price-box {
+                float: none;
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 3px;
+            }
+                .list-collect-kit .last .old-price {
+                    float: right;
+                    font-size: 14px;
+                    color: #654d00;
+                }
+                .list-collect-kit .last .price {
+                    font-size: 18px;
+                }
+                    .list-collect-kit .last .rubl {
+                        color: #654d00;
+                    }
+            .list-collect-kit .last .saving {
+                font: 400 12px "PT Serif";
+                color: #611c1c;
+            }
+                .last .economy {
+                    display: inline-block;
+                }
+                    .list-collect-kit .last .saving .rubl {
+                        font-size: 10px;
+                        color: #611c1c;
+                    }
+            .list-collect-kit .last .btn-buy {
+                bottom: 20px;
+                left: 16px;
+            }
+
+    .list-prod-accessories,
+    .list-popular-items {
+        overflow: hidden;
+        padding-bottom: 25px;
+        border-top: 1px solid #E5E0C7;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------LK-PAGE--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
