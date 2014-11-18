@@ -1961,6 +1961,11 @@ a.btn-third {
         .list-collect-kit li:first-child:before {
             display: none;
         }
+        
+        .li-opac-4 > a,
+        .li-opac-4 .payment-box {
+            opacity: 0.4;
+        }
 
         .list-collect-kit li.last {
             height: 110px;
@@ -3114,7 +3119,4 @@ a.btn-third {
 }
 .mar-b-30 {
     margin-bottom: 30px;
-}
-.opac-4 {
-    opacity: 0.4;
 }
