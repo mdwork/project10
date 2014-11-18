@@ -1129,23 +1129,40 @@ a.btn-third {
                                 .slider-price a > span .rubl {
                                     font-size: 12px;
                                 }
-
-                .list-catalog-filter .width-155 select {
-                    width: 100%;
+                .list-catalog-filter .width-155 label {
+                    position: relative;
+                    overflow: hidden;
+                    display: block;
+                    width: 145px;
                     height: 31px;
                     padding-left: 10px;
                     border: 1px solid #F0EDDD;
                     -webkit-border-radius: 16px;
                     -moz-border-radius: 16px;
                     border-radius: 16px;
-                    font: 400 14px "PT Serif";
-                    line-height: 31px;
-                    color: #654d00;
                 }
-                    .list-catalog-filter .width-155 select option:hover {
-                        cursor: pointer !important;
-                        background: #EFECDE !important;
+                    .list-catalog-filter .width-155 label:after {
+                        content: '';
+                        position: absolute;
+                        top: 13px;
+                        right: 10px;
+                        width: 10px;
+                        height: 6px;
+                        background: url("../images/spritebox.png") no-repeat -261px -147px
                     }
+                    .list-catalog-filter .width-155 select {
+                        width: 165px;
+                        height: 31px;
+                        border: none;
+                        font: 400 14px "PT Serif";
+                        line-height: 31px;
+                        color: #654d00;
+                        background: transparent;
+                    }
+                        .list-catalog-filter .width-155 select option:hover {
+                            cursor: pointer !important;
+                            background: #EFECDE !important;
+                        }
 
                 .list-radio-sex,
                 .list-check-brand {
