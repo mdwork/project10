@@ -1129,10 +1129,11 @@ a.btn-third {
                                 .slider-price a > span .rubl {
                                     font-size: 12px;
                                 }
-                .list-catalog-filter .width-155 label {
+                .list-catalog-filter .width-155 label,
+                .choice-size label {
                     position: relative;
                     overflow: hidden;
-                    display: block;
+                    display: inline-block;
                     width: 145px;
                     height: 31px;
                     padding-left: 10px;
@@ -1141,7 +1142,8 @@ a.btn-third {
                     -moz-border-radius: 16px;
                     border-radius: 16px;
                 }
-                    .list-catalog-filter .width-155 label:after {
+                    .list-catalog-filter .width-155 label:after,
+                    .choice-size label:after {
                         content: '';
                         position: absolute;
                         top: 13px;
@@ -1150,7 +1152,8 @@ a.btn-third {
                         height: 6px;
                         background: url("../images/spritebox.png") no-repeat -261px -147px
                     }
-                    .list-catalog-filter .width-155 select {
+                    .list-catalog-filter .width-155 select,
+                    .choice-size .select-size {
                         width: 165px;
                         height: 31px;
                         border: none;
@@ -1532,18 +1535,6 @@ a.btn-third {
                     .choice-size p {
                         margin-bottom: 10px;
                         color: #611c1c;
-                    }
-                    .choice-size .select-size {
-                        width: 150px;
-                        height: 31px;
-                        padding-left: 10px;
-                        border: 1px solid #F0EDDD;
-                        -webkit-border-radius: 16px;
-                        -moz-border-radius: 16px;
-                        border-radius: 16px;
-                        font: 400 14px "PT Serif";
-                        line-height: 31px;
-                        color: #654d00;
                     }
                     a.table-sizes-link {
                         position: relative;
@@ -2970,7 +2961,7 @@ a.btn-third {
 }
 #bg-popup .ovefview {
     position: fixed;
-    background: #AA9A4F;
+    background: #000;
     height: 100%;
     width: 100%;
     opacity: 0.5;
