@@ -2665,12 +2665,13 @@ a.btn-third {
 }
     ul.list-contacts {
         overflow: hidden;
-        margin: 64px 0 17px 0;
+        width: 640px;
+        margin: 64px auto 17px;
     }
         .list-contacts li {
             float: left;
             width: 180px;
-            margin: 0 27px 20px 114px;
+            margin: 0 70px 20px;
         }
             .list-contacts header {
                 text-transform: uppercase;
