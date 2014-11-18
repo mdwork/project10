@@ -379,7 +379,7 @@ a.btn-third {
                         z-index: 10;
                         width: 17px;
                         height: 17px;
-                        top: 22px;
+                        top: 20px;
                         left: -20px;
                         float: right;
                         border: none;
@@ -392,7 +392,7 @@ a.btn-third {
                     .fa-search {
                         position: absolute;
                         right: 21px;
-                        top: 23px;
+                        top: 20px;
                         font-size: 16px !important;
                         color: #AA9A4F;
                     }
@@ -1538,6 +1538,7 @@ a.btn-third {
                     }
                     a.table-sizes-link {
                         position: relative;
+                        top: -11px;
                         margin-left: 38px;
                         color: #aa9a4f;
                     }
