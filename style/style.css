@@ -2863,7 +2863,8 @@ a.btn-third {
                 .reg-popup label,
                 .login-popup label,
                 .call-me-popup label,
-                .buy-one-click-popup label{
+                .buy-one-click-popup label,
+                .ask-a-question label{
                     font-weight: 700;
                     line-height: 33px;
                     color: #654d00;
@@ -2931,7 +2932,8 @@ a.btn-third {
     .cod-tel {
         padding-left: 55px;
     }
-    .btn-send {
+    .btn-send,
+    .btn-send-question{
         clear: both;
         display: block;
         width: 145px;
@@ -2949,7 +2951,52 @@ a.btn-third {
     width: 465px;
     height: 300px;
 }
-
+.ask-a-question-popup {
+    overflow: hidden;
+    width: 255px;
+    height: 300px;
+}
+.ask-a-question {
+    margin-top: -20px;
+}
+    .ask-a-question ul {
+        overflow: hidden;
+    }
+        .ask-a-question li {
+            margin-left: 20px;
+        }
+            .ask-a-question-input {
+                width: 200px;
+                float: right;
+                height: 33px;
+                padding-left: 11px;
+                margin-right: 22px;
+                font-size: 16px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 11px;
+                border: none;
+                color: #654d00;
+                background-color: #F0EDDD;
+            }
+            .ask-a-question textarea {
+                float: right;
+                width: 200px;
+                height: 100px;
+                resize: vertical;
+                padding-left: 10px;
+                margin-right: 22px;
+                font-size: 16px;
+                -webkit-border-radius: 11px;
+                -moz-border-radius: 11px;
+                border-radius: 11px;
+                border: none;
+                color: #654d00;
+                background-color: #F0EDDD;
+            }
+    .btn-send-question {
+        margin-top: 20px;
+    }
 #bg-popup {
     display: none;
     position: absolute;
